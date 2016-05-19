@@ -1,0 +1,850 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0216B8D8083779FCD32E284F /* pdf_xobject.c in Sources */ = {isa = PBXBuildFile; fileRef = D2D850DB55DB30C71B977BE0 /* pdf_xobject.c */; };
+		02450BA1A1D9108D1D510B7F /* res_halftone.c in Sources */ = {isa = PBXBuildFile; fileRef = 44F42573F66B71E32023F8D7 /* res_halftone.c */; };
+		07969964FAFE5771478E8DC3 /* doc_document.c in Sources */ = {isa = PBXBuildFile; fileRef = 84C384E9E65427F75A408815 /* doc_document.c */; };
+		0CD6734E6BB9498CE1B3276D /* pdf_metrics.c in Sources */ = {isa = PBXBuildFile; fileRef = D7F5ABC8C53A119E57F6BC0C /* pdf_metrics.c */; };
+		10CDEFA5795A325678D700D7 /* pdf_stream.c in Sources */ = {isa = PBXBuildFile; fileRef = CADBEEA1E8C66CB9B7C2BEA8 /* pdf_stream.c */; };
+		127514C374374C65FD849263 /* dev_null.c in Sources */ = {isa = PBXBuildFile; fileRef = 20338194AEC93A9FF7FABB4A /* dev_null.c */; };
+		134EF7DCAE79233EB7B78FBC /* pdf_cmap_parse.c in Sources */ = {isa = PBXBuildFile; fileRef = 0941D0B23BC95F32D3EB4610 /* pdf_cmap_parse.c */; };
+		1374BDE8F1ABAC73A2D181E1 /* pdf_xref.c in Sources */ = {isa = PBXBuildFile; fileRef = E79FFE3467B6386DCFD944C1 /* pdf_xref.c */; };
+		1508409577D08DB9C51D4CF0 /* res_shade.c in Sources */ = {isa = PBXBuildFile; fileRef = 52AE809EA04AB835935CF6A0 /* res_shade.c */; };
+		1641C70997EDD12932147EA8 /* crypt_sha2.c in Sources */ = {isa = PBXBuildFile; fileRef = 13C7EF8AC2D67806DB0E3E73 /* crypt_sha2.c */; };
+		168D4BCE382CEA382B18E3F8 /* pdf_cmap.c in Sources */ = {isa = PBXBuildFile; fileRef = 13256FA985EAC3B1273CA607 /* pdf_cmap.c */; };
+		1804D2F66F6D36B3221C3526 /* filt_flate.c in Sources */ = {isa = PBXBuildFile; fileRef = 4275CCEF96AED0FC9DDB5D4D /* filt_flate.c */; };
+		1A47B9BE7CB1CB4C616DF01F /* doc_link.c in Sources */ = {isa = PBXBuildFile; fileRef = 77E10CF7D4504B02A1466B66 /* doc_link.c */; };
+		1D6CE50959A5CD992D116391 /* image_md5.c in Sources */ = {isa = PBXBuildFile; fileRef = FE1A9F567591F3C7249A0C9D /* image_md5.c */; };
+		23955478CF2D4E57E6109BFF /* res_path.c in Sources */ = {isa = PBXBuildFile; fileRef = 7D9374BE87C24509747E3345 /* res_path.c */; };
+		2837B323CAF63AF52977E713 /* pdf_outline.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B3BC828CDE8582B39AFF580 /* pdf_outline.c */; };
+		2850860224A50DD5386E92FB /* draw_paint.c in Sources */ = {isa = PBXBuildFile; fileRef = 07374CEF1BAD47DB0FC3F8AF /* draw_paint.c */; };
+		2AD9887161186075A245B55F /* dev_ofpath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7B0F17A2CF8B16719CA1DEAD /* dev_ofpath.cpp */; };
+		2C158D870D81FEEA37AC0E4B /* image_save.c in Sources */ = {isa = PBXBuildFile; fileRef = 859C7ACAF216A95BFFD6C606 /* image_save.c */; };
+		2D10B21C9D016EAA57DB8CF8 /* pdf_colorspace.c in Sources */ = {isa = PBXBuildFile; fileRef = 0274165269D3CB60C82C59A6 /* pdf_colorspace.c */; };
+		2EF51AF7C085AA99F24668F7 /* draw_scale.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C974D0D36F54432D72525A1 /* draw_scale.c */; };
+		3732C0FB6A2D7EBF7A8DAD32 /* pdf_lex.c in Sources */ = {isa = PBXBuildFile; fileRef = 4242B3670FA5C47CE995E5E6 /* pdf_lex.c */; };
+		37AF6A715D6A8A9DB8E8CE14 /* pdf_fontfile.c in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A54443755B22908156A7B /* pdf_fontfile.c */; };
+		3D1862AF37D02BABD18BAC89 /* pdf_store.c in Sources */ = {isa = PBXBuildFile; fileRef = 7FBB4D4D7313992D60FF17A7 /* pdf_store.c */; };
+		3EC56C3CFD8D1257FC858456 /* res_text.c in Sources */ = {isa = PBXBuildFile; fileRef = 60D14463EF78AB01E0A68A0C /* res_text.c */; };
+		49EF3B3227D8893DC9D6DCE4 /* pdf_parse.c in Sources */ = {isa = PBXBuildFile; fileRef = 05EAE2C5D547B9925E70315B /* pdf_parse.c */; };
+		4A0601DD7A871A4A8DAAE8FA /* pdf_cmap_load.c in Sources */ = {isa = PBXBuildFile; fileRef = 5779965CE71A6FECE89B6443 /* pdf_cmap_load.c */; };
+		4C88130CBF2D41EEDE9E51C4 /* image_tiff.c in Sources */ = {isa = PBXBuildFile; fileRef = 4CEE4D70AF7EA77C81201C52 /* image_tiff.c */; };
+		4E17F7DEB8C00F9CDD7FF135 /* pdf_function.c in Sources */ = {isa = PBXBuildFile; fileRef = 4891B9DAA9EFFA7637BF5134 /* pdf_function.c */; };
+		50020118E102A23FE9A8F850 /* image_png.c in Sources */ = {isa = PBXBuildFile; fileRef = 7F4E6CECB0CBAB892DB51E88 /* image_png.c */; };
+		5123231D9A7B16726B218A22 /* doc_outline.c in Sources */ = {isa = PBXBuildFile; fileRef = 382AE96DF29178504B6B00B6 /* doc_outline.c */; };
+		516634CBD304C6F011A5DC3A /* filt_lzwd.c in Sources */ = {isa = PBXBuildFile; fileRef = 76F7DB14FCD21E4991198193 /* filt_lzwd.c */; };
+		52F3067617C252AE187A19FF /* pdf_nametree.c in Sources */ = {isa = PBXBuildFile; fileRef = AEE1A4660979B7FAE993DD6E /* pdf_nametree.c */; };
+		5373547251940D61D15FC8A8 /* pdf_encoding.c in Sources */ = {isa = PBXBuildFile; fileRef = DA66A36338186F9E725D717E /* pdf_encoding.c */; };
+		53B8DC71DE8B26682ACAAF3A /* ofxPDF.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA153C644E79EB019AE57D06 /* ofxPDF.cpp */; };
+		5753CAA3676D3016EE063E0B /* pdf_unicode.c in Sources */ = {isa = PBXBuildFile; fileRef = AC50824A40731986E20BC271 /* pdf_unicode.c */; };
+		58D3B95B827C9BF91187B173 /* draw_glyph.c in Sources */ = {isa = PBXBuildFile; fileRef = 14F49A3FD2166DFB3914C6A3 /* draw_glyph.c */; };
+		5CD218F2D2B7BD860886BF80 /* pdf_page.c in Sources */ = {isa = PBXBuildFile; fileRef = 63D6DDE113F1EFF47D9B6944 /* pdf_page.c */; };
+		5D91EB5ED99816273922F68A /* memento.c in Sources */ = {isa = PBXBuildFile; fileRef = C68F8BDC51B0F52A3C31EB24 /* memento.c */; };
+		61AA3DF4B0CDF281D847925D /* pdf_interpret.c in Sources */ = {isa = PBXBuildFile; fileRef = D322CD43023AC4979EFBA546 /* pdf_interpret.c */; };
+		6E1E3A1A16A52BA252B11D38 /* res_colorspace.c in Sources */ = {isa = PBXBuildFile; fileRef = E9CD2D7E139454B2A341983D /* res_colorspace.c */; };
+		706D4C1C557DEC60B5A864E6 /* pdf_xref_aux.c in Sources */ = {isa = PBXBuildFile; fileRef = 1D1DC315E7046B87DDF4FF16 /* pdf_xref_aux.c */; };
+		7141E7330976A75CEF6AA870 /* dev_trace.c in Sources */ = {isa = PBXBuildFile; fileRef = 738E174D329EAC9D46B5CDF4 /* dev_trace.c */; };
+		7C87AC5EA189E483CF2B4D33 /* pdf_type3.c in Sources */ = {isa = PBXBuildFile; fileRef = 5E8DCECFCB007DCEC9FE9AE2 /* pdf_type3.c */; };
+		7CDA62C09F8744A2D960833F /* base_string.c in Sources */ = {isa = PBXBuildFile; fileRef = E61FA0068FA00D931717CDEF /* base_string.c */; };
+		83D6E77AB3FD2BC3624DE5D0 /* filt_basic.c in Sources */ = {isa = PBXBuildFile; fileRef = FE38D5BF086B6AD9C402A454 /* filt_basic.c */; };
+		8D4664F163530033BCFAD1F4 /* draw_device.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BFB1C401A16B23239BC7236 /* draw_device.c */; };
+		95B3D8DCF2F6CA9205078C11 /* pdf_crypt.c in Sources */ = {isa = PBXBuildFile; fileRef = 8DF4C5A462D30ADB03403719 /* pdf_crypt.c */; };
+		9C0916EB16FBCCCDD5CC1F9C /* base_context.c in Sources */ = {isa = PBXBuildFile; fileRef = 2195FB3464E88DDF48D1B871 /* base_context.c */; };
+		9FDB36E3F0E1E6BFB2045FA1 /* pdf_cmap_table.c in Sources */ = {isa = PBXBuildFile; fileRef = 0C8498798A33FA5E6782DE52 /* pdf_cmap_table.c */; };
+		A4CD932BFA26FBB00DB1A581 /* pdf_object.c in Sources */ = {isa = PBXBuildFile; fileRef = 76E266F6F139A27E5AE485E1 /* pdf_object.c */; };
+		A785FCDBD6012A24E55EA879 /* filt_faxd.c in Sources */ = {isa = PBXBuildFile; fileRef = 0F12D1FF4427CCF54A0003A9 /* filt_faxd.c */; };
+		A9384A19931BADEC9E4CD309 /* base_getopt.c in Sources */ = {isa = PBXBuildFile; fileRef = F0F321B2E909C3DC48D89697 /* base_getopt.c */; };
+		AC0E8E308A3C40F18823A42B /* draw_mesh.c in Sources */ = {isa = PBXBuildFile; fileRef = 66891EB6156E669AB38767B5 /* draw_mesh.c */; };
+		AC5ADCB543150F96DF5E1130 /* draw_unpack.c in Sources */ = {isa = PBXBuildFile; fileRef = 7C2D599441B576545FD359F2 /* draw_unpack.c */; };
+		ADD9BC0E62804E17110B2FA1 /* stm_buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 0589E48BA69CC85BDB2E5759 /* stm_buffer.c */; };
+		AF4A370063D413AECE5226C4 /* dev_list.c in Sources */ = {isa = PBXBuildFile; fileRef = 1384975AD881C161308FDB32 /* dev_list.c */; };
+		B5A219EF8EE8AD55C87DB640 /* pdf_annot.c in Sources */ = {isa = PBXBuildFile; fileRef = F7F9E1930739B1031F5CFD17 /* pdf_annot.c */; };
+		BDEE71F9FEC8B63576F53640 /* draw_path.c in Sources */ = {isa = PBXBuildFile; fileRef = 7A339D0ED84BB9544522AFC8 /* draw_path.c */; };
+		BE22FB6DC308054344EA5A61 /* pdf_repair.c in Sources */ = {isa = PBXBuildFile; fileRef = 1E56860B901520C0439A0E19 /* pdf_repair.c */; };
+		C3E489373CD235005ACA6B50 /* base_memory.c in Sources */ = {isa = PBXBuildFile; fileRef = 9E26F07AECA2668E110D8E7E /* base_memory.c */; };
+		C4E56C33F1317475DDE6CB36 /* draw_affine.c in Sources */ = {isa = PBXBuildFile; fileRef = 247C0E4D5148EFB5BA97EA8A /* draw_affine.c */; };
+		C5A9A49FF64DC7E66E1959BD /* stm_open.c in Sources */ = {isa = PBXBuildFile; fileRef = C7386EA1B09BF968DC9908F7 /* stm_open.c */; };
+		C5DFC11A67F6D978613B49B3 /* res_bitmap.c in Sources */ = {isa = PBXBuildFile; fileRef = 09F1AF272E85AC8200B967D7 /* res_bitmap.c */; };
+		C7DB2C34A5C23BEA4BA30E6B /* crypt_aes.c in Sources */ = {isa = PBXBuildFile; fileRef = CD347C825A757D7101324B04 /* crypt_aes.c */; };
+		CF4B3A4638F49479C42D7522 /* base_geometry.c in Sources */ = {isa = PBXBuildFile; fileRef = 5AEA7DF95130082560BFEC9E /* base_geometry.c */; };
+		CF627BE716929C6C8F51A459 /* base_time.c in Sources */ = {isa = PBXBuildFile; fileRef = B8237A580832359F5EFB5C90 /* base_time.c */; };
+		D0D210DE9905EE3BA4E16FDB /* pdf_shade.c in Sources */ = {isa = PBXBuildFile; fileRef = C409F79A831A23AC32661241 /* pdf_shade.c */; };
+		D1C92EC9ED8C5A694EEDD95F /* pdf_image.c in Sources */ = {isa = PBXBuildFile; fileRef = 4E85951B81D29D2538E78E70 /* pdf_image.c */; };
+		D1EE021D9FFA7F8E0C3757E6 /* base_error.c in Sources */ = {isa = PBXBuildFile; fileRef = 2FA4D5FDA19D5B3123E9C249 /* base_error.c */; };
+		D322E12C87C28859ABA92812 /* res_font.c in Sources */ = {isa = PBXBuildFile; fileRef = 628C688389AD400C6FA1731D /* res_font.c */; };
+		D51693E1F431C749A6144A11 /* crypt_arc4.c in Sources */ = {isa = PBXBuildFile; fileRef = CD7B9B782D2AEC8E87652C5D /* crypt_arc4.c */; };
+		D9F164F32ED7492B06B7D023 /* dev_text.c in Sources */ = {isa = PBXBuildFile; fileRef = CDA8A618FE2AFD8C4909A6EE /* dev_text.c */; };
+		DCB405C0175540DDD087082A /* filt_predict.c in Sources */ = {isa = PBXBuildFile; fileRef = DF2A429EC1049CC5CA3E0C8A /* filt_predict.c */; };
+		E3B2C699CCFB03B8C4B00159 /* pdf_write.c in Sources */ = {isa = PBXBuildFile; fileRef = 7F551CCBAA5D915EE3E41F1B /* pdf_write.c */; };
+		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
+		E46534921FE75472FD24524E /* pdf_font.c in Sources */ = {isa = PBXBuildFile; fileRef = EB224A4284CCCBA3888A0523 /* pdf_font.c */; };
+		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
+		E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */; };
+		E557FD295E41F628D7E1A1DF /* base_hash.c in Sources */ = {isa = PBXBuildFile; fileRef = 484FA80033B2869D0D32B5A8 /* base_hash.c */; };
+		E814C163E827793DAF112722 /* draw_blend.c in Sources */ = {isa = PBXBuildFile; fileRef = 4058B0BDA14C8916F847B537 /* draw_blend.c */; };
+		E8A712E1E355EDEB5C872739 /* dev_bbox.c in Sources */ = {isa = PBXBuildFile; fileRef = 0A659BFCB5BE12D171AC09DB /* dev_bbox.c */; };
+		EA2F90095F5D94494820FB41 /* stm_read.c in Sources */ = {isa = PBXBuildFile; fileRef = 266BC4861989942C1099C199 /* stm_read.c */; };
+		EA888D10F05E01DE355BEBC7 /* res_pixmap.c in Sources */ = {isa = PBXBuildFile; fileRef = 78D7A61B9E34573B1C8119BD /* res_pixmap.c */; };
+		EBCE37AF4F6A69DEA5E151C8 /* crypt_md5.c in Sources */ = {isa = PBXBuildFile; fileRef = 03DA02032CAF4B865E127B1E /* crypt_md5.c */; };
+		FA39C37A8DA0EB3071DA4655 /* draw_edge.c in Sources */ = {isa = PBXBuildFile; fileRef = A4D7379CF379CE636EE5FBE1 /* draw_edge.c */; };
+		FF4895C79C9600285D458971 /* res_store.c in Sources */ = {isa = PBXBuildFile; fileRef = 72A66E15D76705EA077895CB /* res_store.c */; };
+		FFB82151009B7F310D131622 /* pdf_pattern.c in Sources */ = {isa = PBXBuildFile; fileRef = 065D5A46952F3D1EFC9D8111 /* pdf_pattern.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E4328147138ABC890047C5CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4B27C1510CBEB8E00536013;
+			remoteInfo = openFrameworks;
+		};
+		E4EEB9AB138B136A00A80321 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E4B27C1410CBEB8E00536013;
+			remoteInfo = openFrameworks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E4C2427710CC5ABF004149E2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0274165269D3CB60C82C59A6 /* pdf_colorspace.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = pdf_colorspace.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/pdf/pdf_colorspace.c; sourceTree = SOURCE_ROOT; };
+		03DA02032CAF4B865E127B1E /* crypt_md5.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = crypt_md5.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/fitz/crypt_md5.c; sourceTree = SOURCE_ROOT; };
+		0589E48BA69CC85BDB2E5759 /* stm_buffer.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = stm_buffer.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/fitz/stm_buffer.c; sourceTree = SOURCE_ROOT; };
+		05EAE2C5D547B9925E70315B /* pdf_parse.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = pdf_parse.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/pdf/pdf_parse.c; sourceTree = SOURCE_ROOT; };
+		065D5A46952F3D1EFC9D8111 /* pdf_pattern.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = pdf_pattern.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/pdf/pdf_pattern.c; sourceTree = SOURCE_ROOT; };
+		07374CEF1BAD47DB0FC3F8AF /* draw_paint.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = draw_paint.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/draw/draw_paint.c; sourceTree = SOURCE_ROOT; };
+		0941D0B23BC95F32D3EB4610 /* pdf_cmap_parse.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = pdf_cmap_parse.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/pdf/pdf_cmap_parse.c; sourceTree = SOURCE_ROOT; };
+		09F1AF272E85AC8200B967D7 /* res_bitmap.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = res_bitmap.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/fitz/res_bitmap.c; sourceTree = SOURCE_ROOT; };
+		0A659BFCB5BE12D171AC09DB /* dev_bbox.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = dev_bbox.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/fitz/dev_bbox.c; sourceTree = SOURCE_ROOT; };
+		0C8498798A33FA5E6782DE52 /* pdf_cmap_table.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = pdf_cmap_table.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/pdf/pdf_cmap_table.c; sourceTree = SOURCE_ROOT; };
+		0F12D1FF4427CCF54A0003A9 /* filt_faxd.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = filt_faxd.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/fitz/filt_faxd.c; sourceTree = SOURCE_ROOT; };
+		13256FA985EAC3B1273CA607 /* pdf_cmap.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = pdf_cmap.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/pdf/pdf_cmap.c; sourceTree = SOURCE_ROOT; };
+		1384975AD881C161308FDB32 /* dev_list.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = dev_list.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/fitz/dev_list.c; sourceTree = SOURCE_ROOT; };
+		13C7EF8AC2D67806DB0E3E73 /* crypt_sha2.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = crypt_sha2.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/fitz/crypt_sha2.c; sourceTree = SOURCE_ROOT; };
+		14F49A3FD2166DFB3914C6A3 /* draw_glyph.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = draw_glyph.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/draw/draw_glyph.c; sourceTree = SOURCE_ROOT; };
+		1D1DC315E7046B87DDF4FF16 /* pdf_xref_aux.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = pdf_xref_aux.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/pdf/pdf_xref_aux.c; sourceTree = SOURCE_ROOT; };
+		1D52B92ABAE2D57EEBA8ADD6 /* data_glyphlist.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = data_glyphlist.h; path = ../../../addons/ofxPDF/libs/mupdf/lib/pdf/data_glyphlist.h; sourceTree = SOURCE_ROOT; };
+		1E56860B901520C0439A0E19 /* pdf_repair.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = pdf_repair.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/pdf/pdf_repair.c; sourceTree = SOURCE_ROOT; };
+		1F22DF742B9641B967250685 /* ofxPDF.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxPDF.h; path = ../../../addons/ofxPDF/src/ofxPDF.h; sourceTree = SOURCE_ROOT; };
+		1F4A54443755B22908156A7B /* pdf_fontfile.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = pdf_fontfile.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/pdf/pdf_fontfile.c; sourceTree = SOURCE_ROOT; };
+		20338194AEC93A9FF7FABB4A /* dev_null.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = dev_null.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/fitz/dev_null.c; sourceTree = SOURCE_ROOT; };
+		2195FB3464E88DDF48D1B871 /* base_context.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = base_context.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/fitz/base_context.c; sourceTree = SOURCE_ROOT; };
+		247C0E4D5148EFB5BA97EA8A /* draw_affine.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = draw_affine.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/draw/draw_affine.c; sourceTree = SOURCE_ROOT; };
+		266BC4861989942C1099C199 /* stm_read.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = stm_read.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/fitz/stm_read.c; sourceTree = SOURCE_ROOT; };
+		2FA4D5FDA19D5B3123E9C249 /* base_error.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = base_error.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/fitz/base_error.c; sourceTree = SOURCE_ROOT; };
+		382AE96DF29178504B6B00B6 /* doc_outline.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = doc_outline.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/fitz/doc_outline.c; sourceTree = SOURCE_ROOT; };
+		4058B0BDA14C8916F847B537 /* draw_blend.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = draw_blend.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/draw/draw_blend.c; sourceTree = SOURCE_ROOT; };
+		4242B3670FA5C47CE995E5E6 /* pdf_lex.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = pdf_lex.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/pdf/pdf_lex.c; sourceTree = SOURCE_ROOT; };
+		4275CCEF96AED0FC9DDB5D4D /* filt_flate.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = filt_flate.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/fitz/filt_flate.c; sourceTree = SOURCE_ROOT; };
+		44F42573F66B71E32023F8D7 /* res_halftone.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = res_halftone.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/fitz/res_halftone.c; sourceTree = SOURCE_ROOT; };
+		484FA80033B2869D0D32B5A8 /* base_hash.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = base_hash.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/fitz/base_hash.c; sourceTree = SOURCE_ROOT; };
+		4891B9DAA9EFFA7637BF5134 /* pdf_function.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = pdf_function.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/pdf/pdf_function.c; sourceTree = SOURCE_ROOT; };
+		4CEE4D70AF7EA77C81201C52 /* image_tiff.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = image_tiff.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/fitz/image_tiff.c; sourceTree = SOURCE_ROOT; };
+		4E85951B81D29D2538E78E70 /* pdf_image.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = pdf_image.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/pdf/pdf_image.c; sourceTree = SOURCE_ROOT; };
+		52AE809EA04AB835935CF6A0 /* res_shade.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = res_shade.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/fitz/res_shade.c; sourceTree = SOURCE_ROOT; };
+		5779965CE71A6FECE89B6443 /* pdf_cmap_load.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = pdf_cmap_load.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/pdf/pdf_cmap_load.c; sourceTree = SOURCE_ROOT; };
+		5AEA7DF95130082560BFEC9E /* base_geometry.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = base_geometry.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/fitz/base_geometry.c; sourceTree = SOURCE_ROOT; };
+		5B63C344730B8978546E80BD /* cmap_cns.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = cmap_cns.h; path = ../../../addons/ofxPDF/libs/mupdf/lib/generated/cmap_cns.h; sourceTree = SOURCE_ROOT; };
+		5C974D0D36F54432D72525A1 /* draw_scale.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = draw_scale.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/draw/draw_scale.c; sourceTree = SOURCE_ROOT; };
+		5E8DCECFCB007DCEC9FE9AE2 /* pdf_type3.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = pdf_type3.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/pdf/pdf_type3.c; sourceTree = SOURCE_ROOT; };
+		60D14463EF78AB01E0A68A0C /* res_text.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = res_text.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/fitz/res_text.c; sourceTree = SOURCE_ROOT; };
+		628C688389AD400C6FA1731D /* res_font.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = res_font.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/fitz/res_font.c; sourceTree = SOURCE_ROOT; };
+		63D6DDE113F1EFF47D9B6944 /* pdf_page.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = pdf_page.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/pdf/pdf_page.c; sourceTree = SOURCE_ROOT; };
+		66891EB6156E669AB38767B5 /* draw_mesh.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = draw_mesh.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/draw/draw_mesh.c; sourceTree = SOURCE_ROOT; };
+		72A66E15D76705EA077895CB /* res_store.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = res_store.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/fitz/res_store.c; sourceTree = SOURCE_ROOT; };
+		738E174D329EAC9D46B5CDF4 /* dev_trace.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = dev_trace.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/fitz/dev_trace.c; sourceTree = SOURCE_ROOT; };
+		76E266F6F139A27E5AE485E1 /* pdf_object.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = pdf_object.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/pdf/pdf_object.c; sourceTree = SOURCE_ROOT; };
+		76F7DB14FCD21E4991198193 /* filt_lzwd.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = filt_lzwd.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/fitz/filt_lzwd.c; sourceTree = SOURCE_ROOT; };
+		77E10CF7D4504B02A1466B66 /* doc_link.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = doc_link.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/fitz/doc_link.c; sourceTree = SOURCE_ROOT; };
+		78D7A61B9E34573B1C8119BD /* res_pixmap.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = res_pixmap.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/fitz/res_pixmap.c; sourceTree = SOURCE_ROOT; };
+		7A339D0ED84BB9544522AFC8 /* draw_path.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = draw_path.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/draw/draw_path.c; sourceTree = SOURCE_ROOT; };
+		7AA179E1C8CF5D6B0DB5741B /* cmap_korea.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = cmap_korea.h; path = ../../../addons/ofxPDF/libs/mupdf/lib/generated/cmap_korea.h; sourceTree = SOURCE_ROOT; };
+		7B0F17A2CF8B16719CA1DEAD /* dev_ofpath.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = dev_ofpath.cpp; path = ../../../addons/ofxPDF/src/dev_ofpath.cpp; sourceTree = SOURCE_ROOT; };
+		7BFB1C401A16B23239BC7236 /* draw_device.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = draw_device.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/draw/draw_device.c; sourceTree = SOURCE_ROOT; };
+		7C2D599441B576545FD359F2 /* draw_unpack.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = draw_unpack.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/draw/draw_unpack.c; sourceTree = SOURCE_ROOT; };
+		7D9374BE87C24509747E3345 /* res_path.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = res_path.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/fitz/res_path.c; sourceTree = SOURCE_ROOT; };
+		7F4E6CECB0CBAB892DB51E88 /* image_png.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = image_png.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/fitz/image_png.c; sourceTree = SOURCE_ROOT; };
+		7F551CCBAA5D915EE3E41F1B /* pdf_write.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = pdf_write.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/pdf/pdf_write.c; sourceTree = SOURCE_ROOT; };
+		7FBB4D4D7313992D60FF17A7 /* pdf_store.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = pdf_store.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/pdf/pdf_store.c; sourceTree = SOURCE_ROOT; };
+		8142B4128515C8E70A1905AF /* font_base14.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = font_base14.h; path = ../../../addons/ofxPDF/libs/mupdf/lib/generated/font_base14.h; sourceTree = SOURCE_ROOT; };
+		83913A90BC1929FC16FE8C0F /* memento.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = memento.h; path = ../../../addons/ofxPDF/libs/mupdf/lib/fitz/memento.h; sourceTree = SOURCE_ROOT; };
+		84C384E9E65427F75A408815 /* doc_document.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = doc_document.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/fitz/doc_document.c; sourceTree = SOURCE_ROOT; };
+		859C7ACAF216A95BFFD6C606 /* image_save.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = image_save.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/fitz/image_save.c; sourceTree = SOURCE_ROOT; };
+		8B3BC828CDE8582B39AFF580 /* pdf_outline.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = pdf_outline.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/pdf/pdf_outline.c; sourceTree = SOURCE_ROOT; };
+		8DF4C5A462D30ADB03403719 /* pdf_crypt.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = pdf_crypt.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/pdf/pdf_crypt.c; sourceTree = SOURCE_ROOT; };
+		9E26F07AECA2668E110D8E7E /* base_memory.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = base_memory.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/fitz/base_memory.c; sourceTree = SOURCE_ROOT; };
+		A4D7379CF379CE636EE5FBE1 /* draw_edge.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = draw_edge.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/draw/draw_edge.c; sourceTree = SOURCE_ROOT; };
+		AC50824A40731986E20BC271 /* pdf_unicode.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = pdf_unicode.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/pdf/pdf_unicode.c; sourceTree = SOURCE_ROOT; };
+		ACEF07E618CE2266DF9506AA /* fitz-internal.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "fitz-internal.h"; path = "../../../addons/ofxPDF/libs/mupdf/lib/fitz/fitz-internal.h"; sourceTree = SOURCE_ROOT; };
+		AEE1A4660979B7FAE993DD6E /* pdf_nametree.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = pdf_nametree.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/pdf/pdf_nametree.c; sourceTree = SOURCE_ROOT; };
+		B39E3F46A4951097BB40521D /* cmap_gb.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = cmap_gb.h; path = ../../../addons/ofxPDF/libs/mupdf/lib/generated/cmap_gb.h; sourceTree = SOURCE_ROOT; };
+		B4C094825C07A5CAC5152325 /* mupdf-internal.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "mupdf-internal.h"; path = "../../../addons/ofxPDF/libs/mupdf/lib/pdf/mupdf-internal.h"; sourceTree = SOURCE_ROOT; };
+		B8237A580832359F5EFB5C90 /* base_time.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = base_time.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/fitz/base_time.c; sourceTree = SOURCE_ROOT; };
+		C409F79A831A23AC32661241 /* pdf_shade.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = pdf_shade.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/pdf/pdf_shade.c; sourceTree = SOURCE_ROOT; };
+		C5F22404228A5A44472236FC /* cmap_japan.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = cmap_japan.h; path = ../../../addons/ofxPDF/libs/mupdf/lib/generated/cmap_japan.h; sourceTree = SOURCE_ROOT; };
+		C68F8BDC51B0F52A3C31EB24 /* memento.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = memento.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/fitz/memento.c; sourceTree = SOURCE_ROOT; };
+		C7386EA1B09BF968DC9908F7 /* stm_open.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = stm_open.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/fitz/stm_open.c; sourceTree = SOURCE_ROOT; };
+		CA153C644E79EB019AE57D06 /* ofxPDF.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxPDF.cpp; path = ../../../addons/ofxPDF/src/ofxPDF.cpp; sourceTree = SOURCE_ROOT; };
+		CADBEEA1E8C66CB9B7C2BEA8 /* pdf_stream.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = pdf_stream.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/pdf/pdf_stream.c; sourceTree = SOURCE_ROOT; };
+		CC9F166C9F44FAA38711B067 /* data_encodings.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = data_encodings.h; path = ../../../addons/ofxPDF/libs/mupdf/lib/pdf/data_encodings.h; sourceTree = SOURCE_ROOT; };
+		CD347C825A757D7101324B04 /* crypt_aes.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = crypt_aes.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/fitz/crypt_aes.c; sourceTree = SOURCE_ROOT; };
+		CD7B9B782D2AEC8E87652C5D /* crypt_arc4.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = crypt_arc4.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/fitz/crypt_arc4.c; sourceTree = SOURCE_ROOT; };
+		CDA8A618FE2AFD8C4909A6EE /* dev_text.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = dev_text.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/fitz/dev_text.c; sourceTree = SOURCE_ROOT; };
+		CE444E5DB15194A3C53C2BD4 /* mupdf.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = mupdf.h; path = ../../../addons/ofxPDF/libs/mupdf/lib/pdf/mupdf.h; sourceTree = SOURCE_ROOT; };
+		D2D850DB55DB30C71B977BE0 /* pdf_xobject.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = pdf_xobject.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/pdf/pdf_xobject.c; sourceTree = SOURCE_ROOT; };
+		D322CD43023AC4979EFBA546 /* pdf_interpret.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = pdf_interpret.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/pdf/pdf_interpret.c; sourceTree = SOURCE_ROOT; };
+		D7F5ABC8C53A119E57F6BC0C /* pdf_metrics.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = pdf_metrics.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/pdf/pdf_metrics.c; sourceTree = SOURCE_ROOT; };
+		DA66A36338186F9E725D717E /* pdf_encoding.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = pdf_encoding.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/pdf/pdf_encoding.c; sourceTree = SOURCE_ROOT; };
+		DF2A429EC1049CC5CA3E0C8A /* filt_predict.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = filt_predict.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/fitz/filt_predict.c; sourceTree = SOURCE_ROOT; };
+		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
+		E4B69B5B0A3A1756003C02F2 /* ofxPDFSampleDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ofxPDFSampleDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4B69E1D0A3A1BDC003C02F2 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ofApp.cpp; path = src/ofApp.cpp; sourceTree = SOURCE_ROOT; };
+		E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofApp.h; path = src/ofApp.h; sourceTree = SOURCE_ROOT; };
+		E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
+		E4EB691F138AFCF100A09F29 /* CoreOF.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = CoreOF.xcconfig; path = ../../../libs/openFrameworksCompiled/project/osx/CoreOF.xcconfig; sourceTree = SOURCE_ROOT; };
+		E4EB6923138AFD0F00A09F29 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
+		E61FA0068FA00D931717CDEF /* base_string.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = base_string.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/fitz/base_string.c; sourceTree = SOURCE_ROOT; };
+		E79FFE3467B6386DCFD944C1 /* pdf_xref.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = pdf_xref.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/pdf/pdf_xref.c; sourceTree = SOURCE_ROOT; };
+		E9CD2D7E139454B2A341983D /* res_colorspace.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = res_colorspace.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/fitz/res_colorspace.c; sourceTree = SOURCE_ROOT; };
+		EB224A4284CCCBA3888A0523 /* pdf_font.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = pdf_font.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/pdf/pdf_font.c; sourceTree = SOURCE_ROOT; };
+		F0F321B2E909C3DC48D89697 /* base_getopt.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = base_getopt.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/fitz/base_getopt.c; sourceTree = SOURCE_ROOT; };
+		F453D2D1BBA9DC57D982DC0F /* fitz.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = fitz.h; path = ../../../addons/ofxPDF/libs/mupdf/lib/fitz/fitz.h; sourceTree = SOURCE_ROOT; };
+		F7F9E1930739B1031F5CFD17 /* pdf_annot.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = pdf_annot.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/pdf/pdf_annot.c; sourceTree = SOURCE_ROOT; };
+		FE1A9F567591F3C7249A0C9D /* image_md5.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = image_md5.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/fitz/image_md5.c; sourceTree = SOURCE_ROOT; };
+		FE38D5BF086B6AD9C402A454 /* filt_basic.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = filt_basic.c; path = ../../../addons/ofxPDF/libs/mupdf/lib/fitz/filt_basic.c; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E4B69B590A3A1756003C02F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		212F97D8DCFFB08AE12775CB /* src */ = {
+			isa = PBXGroup;
+			children = (
+				7B0F17A2CF8B16719CA1DEAD /* dev_ofpath.cpp */,
+				CA153C644E79EB019AE57D06 /* ofxPDF.cpp */,
+				1F22DF742B9641B967250685 /* ofxPDF.h */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		3A4AF32E46B79C48E65581CA /* pdf */ = {
+			isa = PBXGroup;
+			children = (
+				CC9F166C9F44FAA38711B067 /* data_encodings.h */,
+				1D52B92ABAE2D57EEBA8ADD6 /* data_glyphlist.h */,
+				B4C094825C07A5CAC5152325 /* mupdf-internal.h */,
+				CE444E5DB15194A3C53C2BD4 /* mupdf.h */,
+				F7F9E1930739B1031F5CFD17 /* pdf_annot.c */,
+				13256FA985EAC3B1273CA607 /* pdf_cmap.c */,
+				5779965CE71A6FECE89B6443 /* pdf_cmap_load.c */,
+				0941D0B23BC95F32D3EB4610 /* pdf_cmap_parse.c */,
+				0C8498798A33FA5E6782DE52 /* pdf_cmap_table.c */,
+				0274165269D3CB60C82C59A6 /* pdf_colorspace.c */,
+				8DF4C5A462D30ADB03403719 /* pdf_crypt.c */,
+				DA66A36338186F9E725D717E /* pdf_encoding.c */,
+				EB224A4284CCCBA3888A0523 /* pdf_font.c */,
+				1F4A54443755B22908156A7B /* pdf_fontfile.c */,
+				4891B9DAA9EFFA7637BF5134 /* pdf_function.c */,
+				4E85951B81D29D2538E78E70 /* pdf_image.c */,
+				D322CD43023AC4979EFBA546 /* pdf_interpret.c */,
+				4242B3670FA5C47CE995E5E6 /* pdf_lex.c */,
+				D7F5ABC8C53A119E57F6BC0C /* pdf_metrics.c */,
+				AEE1A4660979B7FAE993DD6E /* pdf_nametree.c */,
+				76E266F6F139A27E5AE485E1 /* pdf_object.c */,
+				8B3BC828CDE8582B39AFF580 /* pdf_outline.c */,
+				63D6DDE113F1EFF47D9B6944 /* pdf_page.c */,
+				05EAE2C5D547B9925E70315B /* pdf_parse.c */,
+				065D5A46952F3D1EFC9D8111 /* pdf_pattern.c */,
+				1E56860B901520C0439A0E19 /* pdf_repair.c */,
+				C409F79A831A23AC32661241 /* pdf_shade.c */,
+				7FBB4D4D7313992D60FF17A7 /* pdf_store.c */,
+				CADBEEA1E8C66CB9B7C2BEA8 /* pdf_stream.c */,
+				5E8DCECFCB007DCEC9FE9AE2 /* pdf_type3.c */,
+				AC50824A40731986E20BC271 /* pdf_unicode.c */,
+				7F551CCBAA5D915EE3E41F1B /* pdf_write.c */,
+				D2D850DB55DB30C71B977BE0 /* pdf_xobject.c */,
+				E79FFE3467B6386DCFD944C1 /* pdf_xref.c */,
+				1D1DC315E7046B87DDF4FF16 /* pdf_xref_aux.c */,
+			);
+			name = pdf;
+			sourceTree = "<group>";
+		};
+		50F1E1ADA369BC171BA602D9 /* fitz */ = {
+			isa = PBXGroup;
+			children = (
+				2195FB3464E88DDF48D1B871 /* base_context.c */,
+				2FA4D5FDA19D5B3123E9C249 /* base_error.c */,
+				5AEA7DF95130082560BFEC9E /* base_geometry.c */,
+				F0F321B2E909C3DC48D89697 /* base_getopt.c */,
+				484FA80033B2869D0D32B5A8 /* base_hash.c */,
+				9E26F07AECA2668E110D8E7E /* base_memory.c */,
+				E61FA0068FA00D931717CDEF /* base_string.c */,
+				B8237A580832359F5EFB5C90 /* base_time.c */,
+				CD347C825A757D7101324B04 /* crypt_aes.c */,
+				CD7B9B782D2AEC8E87652C5D /* crypt_arc4.c */,
+				03DA02032CAF4B865E127B1E /* crypt_md5.c */,
+				13C7EF8AC2D67806DB0E3E73 /* crypt_sha2.c */,
+				0A659BFCB5BE12D171AC09DB /* dev_bbox.c */,
+				1384975AD881C161308FDB32 /* dev_list.c */,
+				20338194AEC93A9FF7FABB4A /* dev_null.c */,
+				CDA8A618FE2AFD8C4909A6EE /* dev_text.c */,
+				738E174D329EAC9D46B5CDF4 /* dev_trace.c */,
+				84C384E9E65427F75A408815 /* doc_document.c */,
+				77E10CF7D4504B02A1466B66 /* doc_link.c */,
+				382AE96DF29178504B6B00B6 /* doc_outline.c */,
+				FE38D5BF086B6AD9C402A454 /* filt_basic.c */,
+				0F12D1FF4427CCF54A0003A9 /* filt_faxd.c */,
+				4275CCEF96AED0FC9DDB5D4D /* filt_flate.c */,
+				76F7DB14FCD21E4991198193 /* filt_lzwd.c */,
+				DF2A429EC1049CC5CA3E0C8A /* filt_predict.c */,
+				ACEF07E618CE2266DF9506AA /* fitz-internal.h */,
+				F453D2D1BBA9DC57D982DC0F /* fitz.h */,
+				FE1A9F567591F3C7249A0C9D /* image_md5.c */,
+				7F4E6CECB0CBAB892DB51E88 /* image_png.c */,
+				859C7ACAF216A95BFFD6C606 /* image_save.c */,
+				4CEE4D70AF7EA77C81201C52 /* image_tiff.c */,
+				C68F8BDC51B0F52A3C31EB24 /* memento.c */,
+				83913A90BC1929FC16FE8C0F /* memento.h */,
+				09F1AF272E85AC8200B967D7 /* res_bitmap.c */,
+				E9CD2D7E139454B2A341983D /* res_colorspace.c */,
+				628C688389AD400C6FA1731D /* res_font.c */,
+				44F42573F66B71E32023F8D7 /* res_halftone.c */,
+				7D9374BE87C24509747E3345 /* res_path.c */,
+				78D7A61B9E34573B1C8119BD /* res_pixmap.c */,
+				52AE809EA04AB835935CF6A0 /* res_shade.c */,
+				72A66E15D76705EA077895CB /* res_store.c */,
+				60D14463EF78AB01E0A68A0C /* res_text.c */,
+				0589E48BA69CC85BDB2E5759 /* stm_buffer.c */,
+				C7386EA1B09BF968DC9908F7 /* stm_open.c */,
+				266BC4861989942C1099C199 /* stm_read.c */,
+			);
+			name = fitz;
+			sourceTree = "<group>";
+		};
+		62E479208D578EA558321D00 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				770DEC354B0C6A6A195F767A /* draw */,
+				50F1E1ADA369BC171BA602D9 /* fitz */,
+				A099EF67D62CDBD0C74D5E48 /* generated */,
+				3A4AF32E46B79C48E65581CA /* pdf */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+		6948EE371B920CB800B5AC1A /* local_addons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = local_addons;
+			sourceTree = "<group>";
+		};
+		6D294A7E37B923F83F167E0E /* ofxPDF */ = {
+			isa = PBXGroup;
+			children = (
+				212F97D8DCFFB08AE12775CB /* src */,
+				A9B121D3234F5A80142D74D4 /* libs */,
+			);
+			name = ofxPDF;
+			sourceTree = "<group>";
+		};
+		770DEC354B0C6A6A195F767A /* draw */ = {
+			isa = PBXGroup;
+			children = (
+				247C0E4D5148EFB5BA97EA8A /* draw_affine.c */,
+				4058B0BDA14C8916F847B537 /* draw_blend.c */,
+				7BFB1C401A16B23239BC7236 /* draw_device.c */,
+				A4D7379CF379CE636EE5FBE1 /* draw_edge.c */,
+				14F49A3FD2166DFB3914C6A3 /* draw_glyph.c */,
+				66891EB6156E669AB38767B5 /* draw_mesh.c */,
+				07374CEF1BAD47DB0FC3F8AF /* draw_paint.c */,
+				7A339D0ED84BB9544522AFC8 /* draw_path.c */,
+				5C974D0D36F54432D72525A1 /* draw_scale.c */,
+				7C2D599441B576545FD359F2 /* draw_unpack.c */,
+			);
+			name = draw;
+			sourceTree = "<group>";
+		};
+		96B68537B2578ADF0DC7BF9F /* mupdf */ = {
+			isa = PBXGroup;
+			children = (
+				62E479208D578EA558321D00 /* lib */,
+			);
+			name = mupdf;
+			sourceTree = "<group>";
+		};
+		A099EF67D62CDBD0C74D5E48 /* generated */ = {
+			isa = PBXGroup;
+			children = (
+				5B63C344730B8978546E80BD /* cmap_cns.h */,
+				B39E3F46A4951097BB40521D /* cmap_gb.h */,
+				C5F22404228A5A44472236FC /* cmap_japan.h */,
+				7AA179E1C8CF5D6B0DB5741B /* cmap_korea.h */,
+				8142B4128515C8E70A1905AF /* font_base14.h */,
+			);
+			name = generated;
+			sourceTree = "<group>";
+		};
+		A9B121D3234F5A80142D74D4 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				96B68537B2578ADF0DC7BF9F /* mupdf */,
+			);
+			name = libs;
+			sourceTree = "<group>";
+		};
+		BB4B014C10F69532006C3DED /* addons */ = {
+			isa = PBXGroup;
+			children = (
+				6D294A7E37B923F83F167E0E /* ofxPDF */,
+			);
+			name = addons;
+			sourceTree = "<group>";
+		};
+		E4328144138ABC890047C5CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E4328148138ABC890047C5CB /* openFrameworksDebug.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E4B69B4A0A3A1720003C02F2 = {
+			isa = PBXGroup;
+			children = (
+				E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */,
+				E4EB6923138AFD0F00A09F29 /* Project.xcconfig */,
+				E4B69E1C0A3A1BDC003C02F2 /* src */,
+				E4EEC9E9138DF44700A80321 /* openFrameworks */,
+				BB4B014C10F69532006C3DED /* addons */,
+				6948EE371B920CB800B5AC1A /* local_addons */,
+				E4B69B5B0A3A1756003C02F2 /* ofxPDFSampleDebug.app */,
+			);
+			sourceTree = "<group>";
+		};
+		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
+				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
+				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
+			);
+			path = src;
+			sourceTree = SOURCE_ROOT;
+		};
+		E4EEC9E9138DF44700A80321 /* openFrameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4EB691F138AFCF100A09F29 /* CoreOF.xcconfig */,
+				E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */,
+			);
+			name = openFrameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E4B69B5A0A3A1756003C02F2 /* ofxPDFSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "ofxPDFSample" */;
+			buildPhases = (
+				E4B69B580A3A1756003C02F2 /* Sources */,
+				E4B69B590A3A1756003C02F2 /* Frameworks */,
+				E4B6FFFD0C3F9AB9008CF71C /* ShellScript */,
+				E4C2427710CC5ABF004149E2 /* CopyFiles */,
+				8466F1851C04CA0E00918B1C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4EEB9AC138B136A00A80321 /* PBXTargetDependency */,
+			);
+			name = ofxPDFSample;
+			productName = myOFApp;
+			productReference = E4B69B5B0A3A1756003C02F2 /* ofxPDFSampleDebug.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E4B69B4C0A3A1720003C02F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+			};
+			buildConfigurationList = E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "ofxPDFSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = E4B69B4A0A3A1720003C02F2;
+			productRefGroup = E4B69B4A0A3A1720003C02F2;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E4328144138ABC890047C5CB /* Products */;
+					ProjectRef = E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				E4B69B5A0A3A1756003C02F2 /* ofxPDFSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E4328148138ABC890047C5CB /* openFrameworksDebug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = openFrameworksDebug.a;
+			remoteRef = E4328147138ABC890047C5CB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8466F1851C04CA0E00918B1C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# ---- Code Sign App Package ----\n \n# WARNING: You may have to run Clean in Xcode after changing CODE_SIGN_IDENTITY!\n\n# Verify that $CODE_SIGN_IDENTITY is set\nif [ -z \"${CODE_SIGN_IDENTITY}\" ] ; then\necho \"CODE_SIGN_IDENTITY needs to be set for framework code-signing\"\nexit 0\nfi\n\nif [ -z \"${CODE_SIGN_ENTITLEMENTS}\" ] ; then\necho \"CODE_SIGN_ENTITLEMENTS needs to be set for framework code-signing!\"\n\nif [ \"${CONFIGURATION}\" = \"Release\" ] ; then\nexit 1\nelse\n# Code-signing is optional for non-release builds.\nexit 0\nfi\nfi\n\nITEMS=\"\"\n\nFRAMEWORKS_DIR=\"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}\"\necho \"$FRAMEWORKS_DIR\"\nif [ -d \"$FRAMEWORKS_DIR\" ] ; then\nFRAMEWORKS=$(find \"${FRAMEWORKS_DIR}\" -depth -type d -name \"*.framework\" -or -name \"*.dylib\" -or -name \"*.bundle\" | sed -e \"s/\\(.*framework\\)/\\1\\/Versions\\/A\\//\")\nRESULT=$?\nif [[ $RESULT != 0 ]] ; then\nexit 1\nfi\n\nITEMS=\"${FRAMEWORKS}\"\nfi\n\nLOGINITEMS_DIR=\"${TARGET_BUILD_DIR}/${CONTENTS_FOLDER_PATH}/Library/LoginItems/\"\nif [ -d \"$LOGINITEMS_DIR\" ] ; then\nLOGINITEMS=$(find \"${LOGINITEMS_DIR}\" -depth -type d -name \"*.app\")\nRESULT=$?\nif [[ $RESULT != 0 ]] ; then\nexit 1\nfi\n\nITEMS=\"${ITEMS}\"$'\\n'\"${LOGINITEMS}\"\nfi\n\n# Prefer the expanded name, if available.\nCODE_SIGN_IDENTITY_FOR_ITEMS=\"${EXPANDED_CODE_SIGN_IDENTITY_NAME}\"\nif [ \"${CODE_SIGN_IDENTITY_FOR_ITEMS}\" = \"\" ] ; then\n# Fall back to old behavior.\nCODE_SIGN_IDENTITY_FOR_ITEMS=\"${CODE_SIGN_IDENTITY}\"\nfi\n\necho \"Identity:\"\necho \"${CODE_SIGN_IDENTITY_FOR_ITEMS}\"\n\necho \"Entitlements:\"\necho \"${CODE_SIGN_ENTITLEMENTS}\"\n\necho \"Found:\"\necho \"${ITEMS}\"\n\n# Change the Internal Field Separator (IFS) so that spaces in paths will not cause problems below.\nSAVED_IFS=$IFS\nIFS=$(echo -en \"\\n\\b\")\n\n# Loop through all items.\nfor ITEM in $ITEMS;\ndo\necho \"Signing '${ITEM}'\"\ncodesign --force --verbose --sign \"${CODE_SIGN_IDENTITY_FOR_ITEMS}\" --entitlements \"${CODE_SIGN_ENTITLEMENTS}\" \"${ITEM}\"\nRESULT=$?\nif [[ $RESULT != 0 ]] ; then\necho \"Failed to sign '${ITEM}'.\"\nIFS=$SAVED_IFS\nexit 1\nfi\ndone\n\n# Restore $IFS.\nIFS=$SAVED_IFS\n";
+		};
+		E4B6FFFD0C3F9AB9008CF71C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "mkdir -p \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/\"\n# Copy default icon file into App/Resources\nrsync -aved \"$ICON_FILE\" \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/\"\n# Copy bin/data into App/Resources\nrsync -avz --exclude='.DS_Store' \"${SRCROOT}/bin/data/\" \"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/data/\"\n# Copy libfmod and change install directory for fmod to run\nrsync -aved ../../../libs/fmodex/lib/osx/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Frameworks/\";\ninstall_name_tool -change @executable_path/libfmodex.dylib @executable_path/../Frameworks/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/$PRODUCT_NAME\";\n# Copy GLUT framework (must remove for AppStore submissions)\nrsync -aved ../../../libs/glut/lib/osx/GLUT.framework \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Frameworks/\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E4B69B580A3A1756003C02F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
+				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
+				2AD9887161186075A245B55F /* dev_ofpath.cpp in Sources */,
+				53B8DC71DE8B26682ACAAF3A /* ofxPDF.cpp in Sources */,
+				C4E56C33F1317475DDE6CB36 /* draw_affine.c in Sources */,
+				E814C163E827793DAF112722 /* draw_blend.c in Sources */,
+				8D4664F163530033BCFAD1F4 /* draw_device.c in Sources */,
+				FA39C37A8DA0EB3071DA4655 /* draw_edge.c in Sources */,
+				58D3B95B827C9BF91187B173 /* draw_glyph.c in Sources */,
+				AC0E8E308A3C40F18823A42B /* draw_mesh.c in Sources */,
+				2850860224A50DD5386E92FB /* draw_paint.c in Sources */,
+				BDEE71F9FEC8B63576F53640 /* draw_path.c in Sources */,
+				2EF51AF7C085AA99F24668F7 /* draw_scale.c in Sources */,
+				AC5ADCB543150F96DF5E1130 /* draw_unpack.c in Sources */,
+				9C0916EB16FBCCCDD5CC1F9C /* base_context.c in Sources */,
+				D1EE021D9FFA7F8E0C3757E6 /* base_error.c in Sources */,
+				CF4B3A4638F49479C42D7522 /* base_geometry.c in Sources */,
+				A9384A19931BADEC9E4CD309 /* base_getopt.c in Sources */,
+				E557FD295E41F628D7E1A1DF /* base_hash.c in Sources */,
+				C3E489373CD235005ACA6B50 /* base_memory.c in Sources */,
+				7CDA62C09F8744A2D960833F /* base_string.c in Sources */,
+				CF627BE716929C6C8F51A459 /* base_time.c in Sources */,
+				C7DB2C34A5C23BEA4BA30E6B /* crypt_aes.c in Sources */,
+				D51693E1F431C749A6144A11 /* crypt_arc4.c in Sources */,
+				EBCE37AF4F6A69DEA5E151C8 /* crypt_md5.c in Sources */,
+				1641C70997EDD12932147EA8 /* crypt_sha2.c in Sources */,
+				E8A712E1E355EDEB5C872739 /* dev_bbox.c in Sources */,
+				AF4A370063D413AECE5226C4 /* dev_list.c in Sources */,
+				127514C374374C65FD849263 /* dev_null.c in Sources */,
+				D9F164F32ED7492B06B7D023 /* dev_text.c in Sources */,
+				7141E7330976A75CEF6AA870 /* dev_trace.c in Sources */,
+				07969964FAFE5771478E8DC3 /* doc_document.c in Sources */,
+				1A47B9BE7CB1CB4C616DF01F /* doc_link.c in Sources */,
+				5123231D9A7B16726B218A22 /* doc_outline.c in Sources */,
+				83D6E77AB3FD2BC3624DE5D0 /* filt_basic.c in Sources */,
+				A785FCDBD6012A24E55EA879 /* filt_faxd.c in Sources */,
+				1804D2F66F6D36B3221C3526 /* filt_flate.c in Sources */,
+				516634CBD304C6F011A5DC3A /* filt_lzwd.c in Sources */,
+				DCB405C0175540DDD087082A /* filt_predict.c in Sources */,
+				1D6CE50959A5CD992D116391 /* image_md5.c in Sources */,
+				50020118E102A23FE9A8F850 /* image_png.c in Sources */,
+				2C158D870D81FEEA37AC0E4B /* image_save.c in Sources */,
+				4C88130CBF2D41EEDE9E51C4 /* image_tiff.c in Sources */,
+				5D91EB5ED99816273922F68A /* memento.c in Sources */,
+				C5DFC11A67F6D978613B49B3 /* res_bitmap.c in Sources */,
+				6E1E3A1A16A52BA252B11D38 /* res_colorspace.c in Sources */,
+				D322E12C87C28859ABA92812 /* res_font.c in Sources */,
+				02450BA1A1D9108D1D510B7F /* res_halftone.c in Sources */,
+				23955478CF2D4E57E6109BFF /* res_path.c in Sources */,
+				EA888D10F05E01DE355BEBC7 /* res_pixmap.c in Sources */,
+				1508409577D08DB9C51D4CF0 /* res_shade.c in Sources */,
+				FF4895C79C9600285D458971 /* res_store.c in Sources */,
+				3EC56C3CFD8D1257FC858456 /* res_text.c in Sources */,
+				ADD9BC0E62804E17110B2FA1 /* stm_buffer.c in Sources */,
+				C5A9A49FF64DC7E66E1959BD /* stm_open.c in Sources */,
+				EA2F90095F5D94494820FB41 /* stm_read.c in Sources */,
+				B5A219EF8EE8AD55C87DB640 /* pdf_annot.c in Sources */,
+				168D4BCE382CEA382B18E3F8 /* pdf_cmap.c in Sources */,
+				4A0601DD7A871A4A8DAAE8FA /* pdf_cmap_load.c in Sources */,
+				134EF7DCAE79233EB7B78FBC /* pdf_cmap_parse.c in Sources */,
+				9FDB36E3F0E1E6BFB2045FA1 /* pdf_cmap_table.c in Sources */,
+				2D10B21C9D016EAA57DB8CF8 /* pdf_colorspace.c in Sources */,
+				95B3D8DCF2F6CA9205078C11 /* pdf_crypt.c in Sources */,
+				5373547251940D61D15FC8A8 /* pdf_encoding.c in Sources */,
+				E46534921FE75472FD24524E /* pdf_font.c in Sources */,
+				37AF6A715D6A8A9DB8E8CE14 /* pdf_fontfile.c in Sources */,
+				4E17F7DEB8C00F9CDD7FF135 /* pdf_function.c in Sources */,
+				D1C92EC9ED8C5A694EEDD95F /* pdf_image.c in Sources */,
+				61AA3DF4B0CDF281D847925D /* pdf_interpret.c in Sources */,
+				3732C0FB6A2D7EBF7A8DAD32 /* pdf_lex.c in Sources */,
+				0CD6734E6BB9498CE1B3276D /* pdf_metrics.c in Sources */,
+				52F3067617C252AE187A19FF /* pdf_nametree.c in Sources */,
+				A4CD932BFA26FBB00DB1A581 /* pdf_object.c in Sources */,
+				2837B323CAF63AF52977E713 /* pdf_outline.c in Sources */,
+				5CD218F2D2B7BD860886BF80 /* pdf_page.c in Sources */,
+				49EF3B3227D8893DC9D6DCE4 /* pdf_parse.c in Sources */,
+				FFB82151009B7F310D131622 /* pdf_pattern.c in Sources */,
+				BE22FB6DC308054344EA5A61 /* pdf_repair.c in Sources */,
+				D0D210DE9905EE3BA4E16FDB /* pdf_shade.c in Sources */,
+				3D1862AF37D02BABD18BAC89 /* pdf_store.c in Sources */,
+				10CDEFA5795A325678D700D7 /* pdf_stream.c in Sources */,
+				7C87AC5EA189E483CF2B4D33 /* pdf_type3.c in Sources */,
+				5753CAA3676D3016EE063E0B /* pdf_unicode.c in Sources */,
+				E3B2C699CCFB03B8C4B00159 /* pdf_write.c in Sources */,
+				0216B8D8083779FCD32E284F /* pdf_xobject.c in Sources */,
+				1374BDE8F1ABAC73A2D181E1 /* pdf_xref.c in Sources */,
+				706D4C1C557DEC60B5A864E6 /* pdf_xref_aux.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E4EEB9AC138B136A00A80321 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = openFrameworks;
+			targetProxy = E4EEB9AB138B136A00A80321 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E4B69B4E0A3A1720003C02F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/bin/";
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					../../../addons/ofxPDF/libs,
+					../../../addons/ofxPDF/libs/mupdf,
+					../../../addons/ofxPDF/libs/mupdf/lib,
+					../../../addons/ofxPDF/libs/mupdf/lib/draw,
+					../../../addons/ofxPDF/libs/mupdf/lib/fitz,
+					../../../addons/ofxPDF/libs/mupdf/lib/generated,
+					../../../addons/ofxPDF/libs/mupdf/lib/pdf,
+					../../../addons/ofxPDF/src,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-D__MACOSX_CORE__",
+					"-mtune=native",
+				);
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E4B69B4F0A3A1720003C02F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/bin/";
+				COPY_PHASE_STRIP = YES;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_UNROLL_LOOPS = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					../../../addons/ofxPDF/libs,
+					../../../addons/ofxPDF/libs/mupdf,
+					../../../addons/ofxPDF/libs/mupdf/lib,
+					../../../addons/ofxPDF/libs/mupdf/lib/draw,
+					../../../addons/ofxPDF/libs/mupdf/lib/fitz,
+					../../../addons/ofxPDF/libs/mupdf/lib/generated,
+					../../../addons/ofxPDF/libs/mupdf/lib/pdf,
+					../../../addons/ofxPDF/src,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-D__MACOSX_CORE__",
+					"-mtune=native",
+				);
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E4B69B600A3A1757003C02F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/glut/lib/osx\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = NONE;
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					../../../addons/ofxPDF/libs,
+					../../../addons/ofxPDF/libs/mupdf,
+					../../../addons/ofxPDF/libs/mupdf/lib,
+					../../../addons/ofxPDF/libs/mupdf/lib/draw,
+					../../../addons/ofxPDF/libs/mupdf/lib/fitz,
+					../../../addons/ofxPDF/libs/mupdf/lib/generated,
+					../../../addons/ofxPDF/libs/mupdf/lib/pdf,
+					../../../addons/ofxPDF/src,
+				);
+				ICON = "$(ICON_NAME_DEBUG)";
+				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
+				INFOPLIST_FILE = "openFrameworks-Info.plist";
+				INSTALL_PATH = /Applications;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)Debug";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E4B69B610A3A1757003C02F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/glut/lib/osx\"";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = NONE;
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					../../../addons/ofxPDF/libs,
+					../../../addons/ofxPDF/libs/mupdf,
+					../../../addons/ofxPDF/libs/mupdf/lib,
+					../../../addons/ofxPDF/libs/mupdf/lib/draw,
+					../../../addons/ofxPDF/libs/mupdf/lib/fitz,
+					../../../addons/ofxPDF/libs/mupdf/lib/generated,
+					../../../addons/ofxPDF/libs/mupdf/lib/pdf,
+					../../../addons/ofxPDF/src,
+				);
+				ICON = "$(ICON_NAME_RELEASE)";
+				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
+				INFOPLIST_FILE = "openFrameworks-Info.plist";
+				INSTALL_PATH = /Applications;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+				baseConfigurationReference = E4EB6923138AFD0F00A09F29;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "ofxPDFSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4B69B4E0A3A1720003C02F2 /* Debug */,
+				E4B69B4F0A3A1720003C02F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "ofxPDFSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4B69B600A3A1757003C02F2 /* Debug */,
+				E4B69B610A3A1757003C02F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E4B69B4C0A3A1720003C02F2 /* Project object */;
+}
