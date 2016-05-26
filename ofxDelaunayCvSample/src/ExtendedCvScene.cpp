@@ -11,7 +11,7 @@
 
 //--------------------------------------------------------------
 void ExtendedCvScene::setup(){
-    ofSetWindowShape(1280, 800); //ウインドウのサイズ
+    ofSetWindowShape(1920, 1080); //ウインドウのサイズ
 
     cam.setDesiredFrameRate(30);
     cam.initGrabber(ofGetWidth(), ofGetHeight());
@@ -51,7 +51,7 @@ void ExtendedCvScene::update(){
         }
         /********************************************************************************/
         //ランダムな点を増やす
-        for (int i=0; i<200; i++) {
+        for (int i=0; i<50; i++) {
             delaunay.addPoint(ofPoint(ofRandom(0, ofGetWidth()),ofRandom(0, ofGetHeight())));
         }
         //四隅の点

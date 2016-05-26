@@ -2,7 +2,7 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-    ofSetWindowShape(640, 480); //ウインドウのサイズ
+    ofSetWindowShape(1920, 1080); //ウインドウのサイズ
 
     cam.setDesiredFrameRate(30);
     cam.initGrabber(ofGetWidth(), ofGetHeight());
