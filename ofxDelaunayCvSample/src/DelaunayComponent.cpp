@@ -22,10 +22,10 @@ void DelaunayComponent::setup(){
 
     fbo.allocate(1280,720);
 
-    video.load("silent_demo3.mov");
+    video.load("silent_release.mov");
     video.play();
 
-    precision =2;
+    precision =1;
 }
 
 //--------------------------------------------------------------
