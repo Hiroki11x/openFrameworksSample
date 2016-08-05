@@ -1,17 +1,10 @@
 #pragma once
 
 #include "ofMain.h"
-#include "ExtendedCvScene.hpp"
-#include "ExtendScene.hpp"
-#include "PlaneScene.hpp"
+#include "Particle.hpp"
 
 class ofApp : public ofBaseApp{
-private:
-    ExtendedCvScene mExtendedCvScene;
-    ExtendScene mExtendScene;
-    PlaneScene mPlaneScene;
 
-    int mode;
 	public:
 		void setup();
 		void update();
@@ -28,5 +21,11 @@ private:
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
-		
+
+
+    ofVec2f past_pos,pos;
+    vector<Particle *> particles;
+
+    bool backgroundauto_frag;
+    float start_time;
 };

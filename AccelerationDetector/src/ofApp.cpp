@@ -2,63 +2,72 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-    ofSetWindowShape(1280, 800);
-    mode = 0;
-    mExtendedCvScene.setup();
-    mExtendScene.setup();
-    mPlaneScene.setup();
+    ofBackground(0);
+    backgroundauto_frag = true;
+    ofSetBackgroundAuto(backgroundauto_frag);
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
-    switch (mode) {
-        case 0:
-            mExtendedCvScene.update();
-            break;
+    pos = ofVec2f(mouseX,mouseY);
 
-        case 1:
-            mExtendScene.update();
-            break;
+    if(ofDist(past_pos.x, past_pos.y, pos.x, pos.y)>50){
 
-        case 2:
-            mPlaneScene.update();
-            break;
-        default:
-            break;
+        start_time = ofGetElapsedTimef();
+        backgroundauto_frag=false;
+        ofSetBackgroundAuto(backgroundauto_frag);
+
+        for(int i = 0;i<5;i++){
+            particles.push_back(new Particle());
+            particles.back()->init();
+            particles.back()->setPosition(pos);
+            particles.back()->setSpeed((pos-past_pos)/2);
+        }
     }
+
+    past_pos = pos;
+
+    //Particleの自然消滅を促す
+    for(int i = 0; i<particles.size();i++){
+        particles.at(i)->update();
+        if(particles.at(i)->isEntire()){
+            particles.erase(particles.begin() + i);
+        }
+    }
+
+    if(!backgroundauto_frag && ofGetElapsedTimef()-start_time > 1){
+        ofBackground(0);
+        backgroundauto_frag=true;
+        ofSetBackgroundAuto(backgroundauto_frag);
+    }
+
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-    switch (mode) {
-        case 0:
-            mExtendedCvScene.draw();
-            break;
 
-        case 1:
-            mExtendScene.draw();
-            break;
-
-        case 2:
-            mPlaneScene.draw();
-            break;
-        default:
-            break;
+    ofDrawBitmapStringHighlight("Num of Particle: "+ofToString(particles.size()), 20,20);
+    ofSetColor(255);
+    for(int i = 0; i<particles.size();i++){
+        particles.at(i)->draw();
     }
-    ofDrawBitmapStringHighlight("mode: "+ofToString(mode), 30,30);
 }
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
-    if (key == 'c'){
-        mode = (mode+1)%3;
+    if(key == OF_KEY_RETURN){
+        for(int i = 0;i<5;i++){
+            particles.push_back(new Particle());
+            particles.back()->init();
+            particles.back()->setPosition(pos);
+            particles.back()->setSpeed((pos-past_pos)/2);
+        }
     }
-
 }
 
 //--------------------------------------------------------------
 void ofApp::keyReleased(int key){
-    
+
 }
 
 //--------------------------------------------------------------
