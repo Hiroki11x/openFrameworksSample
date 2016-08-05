@@ -1,17 +1,20 @@
 #pragma once
 
+#define CAM_WIDTH 640
+#define CROP_HEIGHT 480
+
+#include <opencv2/opencv.hpp>
 #include "ofMain.h"
-#include "ExtendedCvScene.hpp"
-#include "ExtendScene.hpp"
-#include "PlaneScene.hpp"
 
 class ofApp : public ofBaseApp{
-private:
-    ExtendedCvScene mExtendedCvScene;
-    ExtendScene mExtendScene;
-    PlaneScene mPlaneScene;
 
-    int mode;
+private:
+    ofImage img[4];
+    ofFbo screenFbo[4];
+
+    cv::VideoCapture cap[4];
+    cv::Mat frame[4];
+
 	public:
 		void setup();
 		void update();
