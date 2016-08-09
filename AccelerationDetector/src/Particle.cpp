@@ -8,11 +8,11 @@
 
 #include "Particle.hpp"
 
-void Particle::setSpeed(float x, float y){
+void Particle::setSpeed(const float x,const float y){
     mSpeed = ofVec2f(x,y);
 }
 
-void Particle::setSpeed(ofVec2f speed){
+void Particle::setSpeed(const ofVec2f speed){
     mSpeed = speed;
 }
 
@@ -23,11 +23,11 @@ void Particle::init(){
     entireTime =ofRandom(1,5);
 }
 
-void Particle::setPosition(float x, float y){
+void Particle::setPosition(const float x,const float y){
     mPosition = ofVec2f(x,y);
 }
 
-void Particle::setPosition(ofVec2f pos){
+void Particle::setPosition(const ofVec2f pos){
     mPosition = pos;
 }
 
