@@ -1,8 +1,34 @@
 #pragma once
 
 #include "ofMain.h"
-
+#include "ofxLeapMotion2.h"
 class ofApp : public ofBaseApp{
+
+private:
+    ofxLeapMotion leap;
+    vector <ofxLeapMotionSimpleHand> simpleHands;
+
+
+    vector <int> fingersFound;
+    ofEasyCam cam;
+
+    ofPoint hand[4];
+    ofLight light;
+
+    ofTrueTypeFont font;
+    bool preHandNum;
+    bool startCount;
+    bool mode;
+    int timeStart;
+    int gravity;
+
+    float rad,rad2;
+
+    ofImage image[10];
+
+    bool drop;
+
+    
 
 	public:
 		void setup();
