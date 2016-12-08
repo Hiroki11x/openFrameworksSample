@@ -1,0 +1,680 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4E5CE9921DF8FE5500DD29F9 /* ImageManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E5CE9901DF8FE5500DD29F9 /* ImageManager.cpp */; };
+		4E5CE9951DF8FF1500DD29F9 /* CustomGalleryImageView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E5CE9931DF8FF1500DD29F9 /* CustomGalleryImageView.cpp */; };
+		4E5CE9991DF91B9700DD29F9 /* PinHoleManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E5CE9971DF91B9700DD29F9 /* PinHoleManager.cpp */; };
+		4E5CE99F1DF9215800DD29F9 /* FontManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E5CE99D1DF9215800DD29F9 /* FontManager.cpp */; };
+		4E5CE9DA1DF9217500DD29F9 /* libharfbuzz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E5CE9CA1DF9217500DD29F9 /* libharfbuzz.a */; };
+		4E5CE9DB1DF9217500DD29F9 /* libharfbuzz.lib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E5CE9CD1DF9217500DD29F9 /* libharfbuzz.lib */; };
+		4E5CE9DC1DF9217500DD29F9 /* libharfbuzzd.lib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E5CE9CE1DF9217500DD29F9 /* libharfbuzzd.lib */; };
+		4E5CE9DD1DF9217500DD29F9 /* libharfbuzz.lib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E5CE9D01DF9217500DD29F9 /* libharfbuzz.lib */; };
+		4E5CE9DE1DF9217500DD29F9 /* libharfbuzzd.lib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E5CE9D11DF9217500DD29F9 /* libharfbuzzd.lib */; };
+		4E5CE9E11DF9217500DD29F9 /* ofxTrueTypeFontUL2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E5CE9D51DF9217500DD29F9 /* ofxTrueTypeFontUL2.cpp */; };
+		C9DC019415D847EB51DAA13F /* ofxLeapMotion2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E52372269152201A84E1731 /* ofxLeapMotion2.cpp */; };
+		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
+		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
+		E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E4328147138ABC890047C5CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4B27C1510CBEB8E00536013;
+			remoteInfo = openFrameworks;
+		};
+		E4EEB9AB138B136A00A80321 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E4B27C1410CBEB8E00536013;
+			remoteInfo = openFrameworks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E4C2427710CC5ABF004149E2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3FF9A5F0C37B2FE4F0C919D4 /* ofxLeapMotion2.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxLeapMotion2.h; path = ../../../addons/ofxLeapMotion2/src/ofxLeapMotion2.h; sourceTree = SOURCE_ROOT; };
+		4E5CE9901DF8FE5500DD29F9 /* ImageManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImageManager.cpp; sourceTree = "<group>"; };
+		4E5CE9911DF8FE5500DD29F9 /* ImageManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ImageManager.hpp; sourceTree = "<group>"; };
+		4E5CE9931DF8FF1500DD29F9 /* CustomGalleryImageView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CustomGalleryImageView.cpp; sourceTree = "<group>"; };
+		4E5CE9941DF8FF1500DD29F9 /* CustomGalleryImageView.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CustomGalleryImageView.hpp; sourceTree = "<group>"; };
+		4E5CE9971DF91B9700DD29F9 /* PinHoleManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PinHoleManager.cpp; sourceTree = "<group>"; };
+		4E5CE9981DF91B9700DD29F9 /* PinHoleManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PinHoleManager.hpp; sourceTree = "<group>"; };
+		4E5CE99D1DF9215800DD29F9 /* FontManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FontManager.cpp; sourceTree = "<group>"; };
+		4E5CE99E1DF9215800DD29F9 /* FontManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FontManager.hpp; sourceTree = "<group>"; };
+		4E5CE9B71DF9217500DD29F9 /* hb-blob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "hb-blob.h"; sourceTree = "<group>"; };
+		4E5CE9B81DF9217500DD29F9 /* hb-buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "hb-buffer.h"; sourceTree = "<group>"; };
+		4E5CE9B91DF9217500DD29F9 /* hb-common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "hb-common.h"; sourceTree = "<group>"; };
+		4E5CE9BA1DF9217500DD29F9 /* hb-deprecated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "hb-deprecated.h"; sourceTree = "<group>"; };
+		4E5CE9BB1DF9217500DD29F9 /* hb-face.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "hb-face.h"; sourceTree = "<group>"; };
+		4E5CE9BC1DF9217500DD29F9 /* hb-font.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "hb-font.h"; sourceTree = "<group>"; };
+		4E5CE9BD1DF9217500DD29F9 /* hb-ft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "hb-ft.h"; sourceTree = "<group>"; };
+		4E5CE9BE1DF9217500DD29F9 /* hb-glib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "hb-glib.h"; sourceTree = "<group>"; };
+		4E5CE9BF1DF9217500DD29F9 /* hb-ot-layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "hb-ot-layout.h"; sourceTree = "<group>"; };
+		4E5CE9C01DF9217500DD29F9 /* hb-ot-tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "hb-ot-tag.h"; sourceTree = "<group>"; };
+		4E5CE9C11DF9217500DD29F9 /* hb-ot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "hb-ot.h"; sourceTree = "<group>"; };
+		4E5CE9C21DF9217500DD29F9 /* hb-set.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "hb-set.h"; sourceTree = "<group>"; };
+		4E5CE9C31DF9217500DD29F9 /* hb-shape-plan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "hb-shape-plan.h"; sourceTree = "<group>"; };
+		4E5CE9C41DF9217500DD29F9 /* hb-shape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "hb-shape.h"; sourceTree = "<group>"; };
+		4E5CE9C51DF9217500DD29F9 /* hb-unicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "hb-unicode.h"; sourceTree = "<group>"; };
+		4E5CE9C61DF9217500DD29F9 /* hb-version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "hb-version.h"; sourceTree = "<group>"; };
+		4E5CE9C71DF9217500DD29F9 /* hb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hb.h; sourceTree = "<group>"; };
+		4E5CE9CA1DF9217500DD29F9 /* libharfbuzz.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libharfbuzz.a; sourceTree = "<group>"; };
+		4E5CE9CD1DF9217500DD29F9 /* libharfbuzz.lib */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libharfbuzz.lib; sourceTree = "<group>"; };
+		4E5CE9CE1DF9217500DD29F9 /* libharfbuzzd.lib */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libharfbuzzd.lib; sourceTree = "<group>"; };
+		4E5CE9D01DF9217500DD29F9 /* libharfbuzz.lib */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libharfbuzz.lib; sourceTree = "<group>"; };
+		4E5CE9D11DF9217500DD29F9 /* libharfbuzzd.lib */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libharfbuzzd.lib; sourceTree = "<group>"; };
+		4E5CE9D51DF9217500DD29F9 /* ofxTrueTypeFontUL2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxTrueTypeFontUL2.cpp; sourceTree = "<group>"; };
+		4E5CE9D61DF9217500DD29F9 /* ofxTrueTypeFontUL2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxTrueTypeFontUL2.h; sourceTree = "<group>"; };
+		9E52372269152201A84E1731 /* ofxLeapMotion2.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxLeapMotion2.cpp; path = ../../../addons/ofxLeapMotion2/src/ofxLeapMotion2.cpp; sourceTree = SOURCE_ROOT; };
+		C2D0E563DD28B9867A44D774 /* Leap.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Leap.h; path = ../../../addons/ofxLeapMotion2/libs/include/Leap.h; sourceTree = SOURCE_ROOT; };
+		CE599C30D4EE3F35EA5374BF /* LeapMath.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = LeapMath.h; path = ../../../addons/ofxLeapMotion2/libs/include/LeapMath.h; sourceTree = SOURCE_ROOT; };
+		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
+		E4B69B5B0A3A1756003C02F2 /* CentennialHallLeapDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CentennialHallLeapDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4B69E1D0A3A1BDC003C02F2 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ofApp.cpp; path = src/ofApp.cpp; sourceTree = SOURCE_ROOT; };
+		E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ofApp.h; path = src/ofApp.h; sourceTree = SOURCE_ROOT; };
+		E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
+		E4EB691F138AFCF100A09F29 /* CoreOF.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = CoreOF.xcconfig; path = ../../../libs/openFrameworksCompiled/project/osx/CoreOF.xcconfig; sourceTree = SOURCE_ROOT; };
+		E4EB6923138AFD0F00A09F29 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E4B69B590A3A1756003C02F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E5CE9DE1DF9217500DD29F9 /* libharfbuzzd.lib in Frameworks */,
+				4E5CE9DC1DF9217500DD29F9 /* libharfbuzzd.lib in Frameworks */,
+				4E5CE9DD1DF9217500DD29F9 /* libharfbuzz.lib in Frameworks */,
+				4E5CE9DB1DF9217500DD29F9 /* libharfbuzz.lib in Frameworks */,
+				E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */,
+				4E5CE9DA1DF9217500DD29F9 /* libharfbuzz.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080C6468CB389159D2CBB422 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				5D229E8F0405ACDFC37A0012 /* include */,
+			);
+			name = libs;
+			sourceTree = "<group>";
+		};
+		1E69E56363BB709D30E47967 /* ofxLeapMotion2 */ = {
+			isa = PBXGroup;
+			children = (
+				A0368E24CBB324983870C1DB /* src */,
+				080C6468CB389159D2CBB422 /* libs */,
+			);
+			name = ofxLeapMotion2;
+			sourceTree = "<group>";
+		};
+		4E5CE98F1DF8FE4500DD29F9 /* imagemanager */ = {
+			isa = PBXGroup;
+			children = (
+				4E5CE9901DF8FE5500DD29F9 /* ImageManager.cpp */,
+				4E5CE9911DF8FE5500DD29F9 /* ImageManager.hpp */,
+			);
+			name = imagemanager;
+			sourceTree = "<group>";
+		};
+		4E5CE9961DF91A4200DD29F9 /* pinhole */ = {
+			isa = PBXGroup;
+			children = (
+				4E5CE9971DF91B9700DD29F9 /* PinHoleManager.cpp */,
+				4E5CE9981DF91B9700DD29F9 /* PinHoleManager.hpp */,
+			);
+			name = pinhole;
+			sourceTree = "<group>";
+		};
+		4E5CE99A1DF91BB400DD29F9 /* gallery */ = {
+			isa = PBXGroup;
+			children = (
+				4E5CE9931DF8FF1500DD29F9 /* CustomGalleryImageView.cpp */,
+				4E5CE9941DF8FF1500DD29F9 /* CustomGalleryImageView.hpp */,
+			);
+			name = gallery;
+			sourceTree = "<group>";
+		};
+		4E5CE99B1DF91BF700DD29F9 /* interface */ = {
+			isa = PBXGroup;
+			children = (
+				4E5CE99A1DF91BB400DD29F9 /* gallery */,
+				4E5CE9961DF91A4200DD29F9 /* pinhole */,
+			);
+			name = interface;
+			sourceTree = "<group>";
+		};
+		4E5CE99C1DF9213400DD29F9 /* fontmanager */ = {
+			isa = PBXGroup;
+			children = (
+				4E5CE99D1DF9215800DD29F9 /* FontManager.cpp */,
+				4E5CE99E1DF9215800DD29F9 /* FontManager.hpp */,
+			);
+			name = fontmanager;
+			sourceTree = "<group>";
+		};
+		4E5CE9A01DF9217500DD29F9 /* ofxTrueTypeFontUL2 */ = {
+			isa = PBXGroup;
+			children = (
+				4E5CE9B41DF9217500DD29F9 /* libs */,
+				4E5CE9D41DF9217500DD29F9 /* src */,
+			);
+			path = ofxTrueTypeFontUL2;
+			sourceTree = "<group>";
+		};
+		4E5CE9B41DF9217500DD29F9 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				4E5CE9B51DF9217500DD29F9 /* harfbuzz */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		4E5CE9B51DF9217500DD29F9 /* harfbuzz */ = {
+			isa = PBXGroup;
+			children = (
+				4E5CE9B61DF9217500DD29F9 /* include */,
+				4E5CE9C81DF9217500DD29F9 /* lib */,
+			);
+			path = harfbuzz;
+			sourceTree = "<group>";
+		};
+		4E5CE9B61DF9217500DD29F9 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				4E5CE9B71DF9217500DD29F9 /* hb-blob.h */,
+				4E5CE9B81DF9217500DD29F9 /* hb-buffer.h */,
+				4E5CE9B91DF9217500DD29F9 /* hb-common.h */,
+				4E5CE9BA1DF9217500DD29F9 /* hb-deprecated.h */,
+				4E5CE9BB1DF9217500DD29F9 /* hb-face.h */,
+				4E5CE9BC1DF9217500DD29F9 /* hb-font.h */,
+				4E5CE9BD1DF9217500DD29F9 /* hb-ft.h */,
+				4E5CE9BE1DF9217500DD29F9 /* hb-glib.h */,
+				4E5CE9BF1DF9217500DD29F9 /* hb-ot-layout.h */,
+				4E5CE9C01DF9217500DD29F9 /* hb-ot-tag.h */,
+				4E5CE9C11DF9217500DD29F9 /* hb-ot.h */,
+				4E5CE9C21DF9217500DD29F9 /* hb-set.h */,
+				4E5CE9C31DF9217500DD29F9 /* hb-shape-plan.h */,
+				4E5CE9C41DF9217500DD29F9 /* hb-shape.h */,
+				4E5CE9C51DF9217500DD29F9 /* hb-unicode.h */,
+				4E5CE9C61DF9217500DD29F9 /* hb-version.h */,
+				4E5CE9C71DF9217500DD29F9 /* hb.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		4E5CE9C81DF9217500DD29F9 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				4E5CE9C91DF9217500DD29F9 /* osx */,
+				4E5CE9CB1DF9217500DD29F9 /* vs */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		4E5CE9C91DF9217500DD29F9 /* osx */ = {
+			isa = PBXGroup;
+			children = (
+				4E5CE9CA1DF9217500DD29F9 /* libharfbuzz.a */,
+			);
+			path = osx;
+			sourceTree = "<group>";
+		};
+		4E5CE9CB1DF9217500DD29F9 /* vs */ = {
+			isa = PBXGroup;
+			children = (
+				4E5CE9CC1DF9217500DD29F9 /* Win32 */,
+				4E5CE9CF1DF9217500DD29F9 /* x64 */,
+			);
+			path = vs;
+			sourceTree = "<group>";
+		};
+		4E5CE9CC1DF9217500DD29F9 /* Win32 */ = {
+			isa = PBXGroup;
+			children = (
+				4E5CE9CD1DF9217500DD29F9 /* libharfbuzz.lib */,
+				4E5CE9CE1DF9217500DD29F9 /* libharfbuzzd.lib */,
+			);
+			path = Win32;
+			sourceTree = "<group>";
+		};
+		4E5CE9CF1DF9217500DD29F9 /* x64 */ = {
+			isa = PBXGroup;
+			children = (
+				4E5CE9D01DF9217500DD29F9 /* libharfbuzz.lib */,
+				4E5CE9D11DF9217500DD29F9 /* libharfbuzzd.lib */,
+			);
+			path = x64;
+			sourceTree = "<group>";
+		};
+		4E5CE9D41DF9217500DD29F9 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				4E5CE9D51DF9217500DD29F9 /* ofxTrueTypeFontUL2.cpp */,
+				4E5CE9D61DF9217500DD29F9 /* ofxTrueTypeFontUL2.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		5D229E8F0405ACDFC37A0012 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				C2D0E563DD28B9867A44D774 /* Leap.h */,
+				CE599C30D4EE3F35EA5374BF /* LeapMath.h */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		6948EE371B920CB800B5AC1A /* local_addons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = local_addons;
+			sourceTree = "<group>";
+		};
+		A0368E24CBB324983870C1DB /* src */ = {
+			isa = PBXGroup;
+			children = (
+				9E52372269152201A84E1731 /* ofxLeapMotion2.cpp */,
+				3FF9A5F0C37B2FE4F0C919D4 /* ofxLeapMotion2.h */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		BB4B014C10F69532006C3DED /* addons */ = {
+			isa = PBXGroup;
+			children = (
+				4E5CE9A01DF9217500DD29F9 /* ofxTrueTypeFontUL2 */,
+				1E69E56363BB709D30E47967 /* ofxLeapMotion2 */,
+			);
+			name = addons;
+			sourceTree = "<group>";
+		};
+		E4328144138ABC890047C5CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E4328148138ABC890047C5CB /* openFrameworksDebug.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E4B69B4A0A3A1720003C02F2 = {
+			isa = PBXGroup;
+			children = (
+				E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */,
+				E4EB6923138AFD0F00A09F29 /* Project.xcconfig */,
+				E4B69E1C0A3A1BDC003C02F2 /* src */,
+				E4EEC9E9138DF44700A80321 /* openFrameworks */,
+				BB4B014C10F69532006C3DED /* addons */,
+				6948EE371B920CB800B5AC1A /* local_addons */,
+				E4B69B5B0A3A1756003C02F2 /* CentennialHallLeapDebug.app */,
+			);
+			sourceTree = "<group>";
+		};
+		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				4E5CE99C1DF9213400DD29F9 /* fontmanager */,
+				4E5CE99B1DF91BF700DD29F9 /* interface */,
+				4E5CE98F1DF8FE4500DD29F9 /* imagemanager */,
+				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
+				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
+				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
+			);
+			path = src;
+			sourceTree = SOURCE_ROOT;
+		};
+		E4EEC9E9138DF44700A80321 /* openFrameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4EB691F138AFCF100A09F29 /* CoreOF.xcconfig */,
+				E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */,
+			);
+			name = openFrameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E4B69B5A0A3A1756003C02F2 /* CentennialHallLeap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "CentennialHallLeap" */;
+			buildPhases = (
+				E4B69B580A3A1756003C02F2 /* Sources */,
+				E4B69B590A3A1756003C02F2 /* Frameworks */,
+				E4B6FFFD0C3F9AB9008CF71C /* ShellScript */,
+				E4C2427710CC5ABF004149E2 /* CopyFiles */,
+				8466F1851C04CA0E00918B1C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4EEB9AC138B136A00A80321 /* PBXTargetDependency */,
+			);
+			name = CentennialHallLeap;
+			productName = myOFApp;
+			productReference = E4B69B5B0A3A1756003C02F2 /* CentennialHallLeapDebug.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E4B69B4C0A3A1720003C02F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+			};
+			buildConfigurationList = E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "CentennialHallLeap" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = E4B69B4A0A3A1720003C02F2;
+			productRefGroup = E4B69B4A0A3A1720003C02F2;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E4328144138ABC890047C5CB /* Products */;
+					ProjectRef = E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				E4B69B5A0A3A1756003C02F2 /* CentennialHallLeap */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E4328148138ABC890047C5CB /* openFrameworksDebug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = openFrameworksDebug.a;
+			remoteRef = E4328147138ABC890047C5CB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8466F1851C04CA0E00918B1C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# ---- Code Sign App Package ----\n \n# WARNING: You may have to run Clean in Xcode after changing CODE_SIGN_IDENTITY!\n\n# Verify that $CODE_SIGN_IDENTITY is set\nif [ -z \"${CODE_SIGN_IDENTITY}\" ] ; then\necho \"CODE_SIGN_IDENTITY needs to be set for framework code-signing\"\nexit 0\nfi\n\nif [ -z \"${CODE_SIGN_ENTITLEMENTS}\" ] ; then\necho \"CODE_SIGN_ENTITLEMENTS needs to be set for framework code-signing!\"\n\nif [ \"${CONFIGURATION}\" = \"Release\" ] ; then\nexit 1\nelse\n# Code-signing is optional for non-release builds.\nexit 0\nfi\nfi\n\nITEMS=\"\"\n\nFRAMEWORKS_DIR=\"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}\"\necho \"$FRAMEWORKS_DIR\"\nif [ -d \"$FRAMEWORKS_DIR\" ] ; then\nFRAMEWORKS=$(find \"${FRAMEWORKS_DIR}\" -depth -type d -name \"*.framework\" -or -name \"*.dylib\" -or -name \"*.bundle\" | sed -e \"s/\\(.*framework\\)/\\1\\/Versions\\/A\\//\")\nRESULT=$?\nif [[ $RESULT != 0 ]] ; then\nexit 1\nfi\n\nITEMS=\"${FRAMEWORKS}\"\nfi\n\nLOGINITEMS_DIR=\"${TARGET_BUILD_DIR}/${CONTENTS_FOLDER_PATH}/Library/LoginItems/\"\nif [ -d \"$LOGINITEMS_DIR\" ] ; then\nLOGINITEMS=$(find \"${LOGINITEMS_DIR}\" -depth -type d -name \"*.app\")\nRESULT=$?\nif [[ $RESULT != 0 ]] ; then\nexit 1\nfi\n\nITEMS=\"${ITEMS}\"$'\\n'\"${LOGINITEMS}\"\nfi\n\n# Prefer the expanded name, if available.\nCODE_SIGN_IDENTITY_FOR_ITEMS=\"${EXPANDED_CODE_SIGN_IDENTITY_NAME}\"\nif [ \"${CODE_SIGN_IDENTITY_FOR_ITEMS}\" = \"\" ] ; then\n# Fall back to old behavior.\nCODE_SIGN_IDENTITY_FOR_ITEMS=\"${CODE_SIGN_IDENTITY}\"\nfi\n\necho \"Identity:\"\necho \"${CODE_SIGN_IDENTITY_FOR_ITEMS}\"\n\necho \"Entitlements:\"\necho \"${CODE_SIGN_ENTITLEMENTS}\"\n\necho \"Found:\"\necho \"${ITEMS}\"\n\n# Change the Internal Field Separator (IFS) so that spaces in paths will not cause problems below.\nSAVED_IFS=$IFS\nIFS=$(echo -en \"\\n\\b\")\n\n# Loop through all items.\nfor ITEM in $ITEMS;\ndo\necho \"Signing '${ITEM}'\"\ncodesign --force --verbose --sign \"${CODE_SIGN_IDENTITY_FOR_ITEMS}\" --entitlements \"${CODE_SIGN_ENTITLEMENTS}\" \"${ITEM}\"\nRESULT=$?\nif [[ $RESULT != 0 ]] ; then\necho \"Failed to sign '${ITEM}'.\"\nIFS=$SAVED_IFS\nexit 1\nfi\ndone\n\n# Restore $IFS.\nIFS=$SAVED_IFS\n";
+		};
+		E4B6FFFD0C3F9AB9008CF71C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp -f ../../../libs/fmodex/lib/osx/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/libfmodex.dylib\"; install_name_tool -change ./libfmodex.dylib @executable_path/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/$PRODUCT_NAME\";\ncp -f ../../../addons/ofxLeapMotion2/libs/lib/osx/libLeap.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/libLeap.dylib\"; install_name_tool -change ./libLeap.dylib @executable_path/libLeap.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/$PRODUCT_NAME\";\nmkdir -p \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/\"\ncp -f \"$ICON_FILE\" \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E4B69B580A3A1756003C02F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
+				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
+				C9DC019415D847EB51DAA13F /* ofxLeapMotion2.cpp in Sources */,
+				4E5CE9E11DF9217500DD29F9 /* ofxTrueTypeFontUL2.cpp in Sources */,
+				4E5CE99F1DF9215800DD29F9 /* FontManager.cpp in Sources */,
+				4E5CE9921DF8FE5500DD29F9 /* ImageManager.cpp in Sources */,
+				4E5CE9951DF8FF1500DD29F9 /* CustomGalleryImageView.cpp in Sources */,
+				4E5CE9991DF91B9700DD29F9 /* PinHoleManager.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E4EEB9AC138B136A00A80321 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = openFrameworks;
+			targetProxy = E4EEB9AB138B136A00A80321 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E4B69B4E0A3A1720003C02F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/bin/";
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					../../../addons/ofxLeapMotion2/libs,
+					../../../addons/ofxLeapMotion2/libs/include,
+					../../../addons/ofxLeapMotion2/libs/lib,
+					../../../addons/ofxLeapMotion2/libs/lib/osx,
+					../../../addons/ofxLeapMotion2/libs/lib/winvs,
+					../../../addons/ofxLeapMotion2/src,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-D__MACOSX_CORE__",
+					"-mtune=native",
+				);
+				OTHER_LDFLAGS = (
+					"$(OF_CORE_FRAMEWORKS)",
+					"$(OF_CORE_LIBS)",
+					../../../addons/ofxLeapMotion2/libs/lib/osx/libLeap.dylib,
+				);
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E4B69B4F0A3A1720003C02F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/bin/";
+				COPY_PHASE_STRIP = YES;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_UNROLL_LOOPS = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					../../../addons/ofxLeapMotion2/libs,
+					../../../addons/ofxLeapMotion2/libs/include,
+					../../../addons/ofxLeapMotion2/libs/lib,
+					../../../addons/ofxLeapMotion2/libs/lib/osx,
+					../../../addons/ofxLeapMotion2/libs/lib/winvs,
+					../../../addons/ofxLeapMotion2/src,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-D__MACOSX_CORE__",
+					"-mtune=native",
+				);
+				OTHER_LDFLAGS = (
+					"$(OF_CORE_FRAMEWORKS)",
+					"$(OF_CORE_LIBS)",
+					../../../addons/ofxLeapMotion2/libs/lib/osx/libLeap.dylib,
+				);
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E4B69B600A3A1757003C02F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/glut/lib/osx\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = NONE;
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					../../../addons/ofxLeapMotion2/libs,
+					../../../addons/ofxLeapMotion2/libs/include,
+					../../../addons/ofxLeapMotion2/libs/lib,
+					../../../addons/ofxLeapMotion2/libs/lib/osx,
+					../../../addons/ofxLeapMotion2/libs/lib/winvs,
+					../../../addons/ofxLeapMotion2/src,
+				);
+				ICON = "$(ICON_NAME_DEBUG)";
+				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
+				INFOPLIST_FILE = "openFrameworks-Info.plist";
+				INSTALL_PATH = /Applications;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ofxTrueTypeFontUL2/libs/harfbuzz/lib/osx",
+					"$(PROJECT_DIR)/ofxTrueTypeFontUL2/libs/harfbuzz/lib/vs/Win32",
+					"$(PROJECT_DIR)/ofxTrueTypeFontUL2/libs/harfbuzz/lib/vs/x64",
+				);
+				OTHER_LDFLAGS = (
+					"$(OF_CORE_FRAMEWORKS)",
+					"$(OF_CORE_LIBS)",
+					../../../addons/ofxLeapMotion2/libs/lib/osx/libLeap.dylib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)Debug";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E4B69B610A3A1757003C02F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/glut/lib/osx\"";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = NONE;
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					../../../addons/ofxLeapMotion2/libs,
+					../../../addons/ofxLeapMotion2/libs/include,
+					../../../addons/ofxLeapMotion2/libs/lib,
+					../../../addons/ofxLeapMotion2/libs/lib/osx,
+					../../../addons/ofxLeapMotion2/libs/lib/winvs,
+					../../../addons/ofxLeapMotion2/src,
+				);
+				ICON = "$(ICON_NAME_RELEASE)";
+				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
+				INFOPLIST_FILE = "openFrameworks-Info.plist";
+				INSTALL_PATH = /Applications;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ofxTrueTypeFontUL2/libs/harfbuzz/lib/osx",
+					"$(PROJECT_DIR)/ofxTrueTypeFontUL2/libs/harfbuzz/lib/vs/Win32",
+					"$(PROJECT_DIR)/ofxTrueTypeFontUL2/libs/harfbuzz/lib/vs/x64",
+				);
+				OTHER_LDFLAGS = (
+					"$(OF_CORE_FRAMEWORKS)",
+					"$(OF_CORE_LIBS)",
+					../../../addons/ofxLeapMotion2/libs/lib/osx/libLeap.dylib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+				baseConfigurationReference = E4EB6923138AFD0F00A09F29;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "CentennialHallLeap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4B69B4E0A3A1720003C02F2 /* Debug */,
+				E4B69B4F0A3A1720003C02F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "CentennialHallLeap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4B69B600A3A1757003C02F2 /* Debug */,
+				E4B69B610A3A1757003C02F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E4B69B4C0A3A1720003C02F2 /* Project object */;
+}
