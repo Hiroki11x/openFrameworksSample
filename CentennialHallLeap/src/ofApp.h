@@ -2,6 +2,7 @@
 #include "ofMain.h"
 #include "ofxLeapMotion2.h"
 #include "ImageManager.hpp"
+
 class ofApp : public ofBaseApp{
 
 private:
@@ -13,6 +14,8 @@ private:
     ofEasyCam cam;
     ofPoint hand[4];
     ofLight light;
+
+    ofVec3f pastHand;
     
 	public:
 		void setup();

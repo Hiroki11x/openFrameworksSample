@@ -41,3 +41,26 @@ void ImageManager::drawImages(){
         index ++;
     }
 }
+
+//--------------------------------------------------
+void ImageManager::drawSequenceImages(){
+    int z;
+    string fileName;
+    int index = 0;
+    char char1[32];
+    for(auto img: ImageManager::images){
+        sprintf(char1, "%04d.jpg", index);
+        fileName = ofToString(char1);
+        z = index * 2000;
+        ofPushMatrix();
+        ofTranslate(0,0,z);
+        PinHoleManager::drawCustomView(img, fileName);
+        ofPopMatrix();
+        index ++;
+    }
+}
+
+//--------------------------------------------------
+void ImageManager::drawImage(int index,string fileName){
+    PinHoleManager::drawCustomView(ImageManager::images.at(index), fileName);
+}

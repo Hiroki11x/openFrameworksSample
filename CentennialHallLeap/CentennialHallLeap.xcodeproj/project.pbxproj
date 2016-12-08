@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		4E5CE9921DF8FE5500DD29F9 /* ImageManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E5CE9901DF8FE5500DD29F9 /* ImageManager.cpp */; };
 		4E5CE9951DF8FF1500DD29F9 /* CustomGalleryImageView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E5CE9931DF8FF1500DD29F9 /* CustomGalleryImageView.cpp */; };
+		4E5CE9991DF91B9700DD29F9 /* PinHoleManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E5CE9971DF91B9700DD29F9 /* PinHoleManager.cpp */; };
+		4E5CE99F1DF9215800DD29F9 /* FontManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E5CE99D1DF9215800DD29F9 /* FontManager.cpp */; };
+		4E5CE9DA1DF9217500DD29F9 /* libharfbuzz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E5CE9CA1DF9217500DD29F9 /* libharfbuzz.a */; };
+		4E5CE9DB1DF9217500DD29F9 /* libharfbuzz.lib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E5CE9CD1DF9217500DD29F9 /* libharfbuzz.lib */; };
+		4E5CE9DC1DF9217500DD29F9 /* libharfbuzzd.lib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E5CE9CE1DF9217500DD29F9 /* libharfbuzzd.lib */; };
+		4E5CE9DD1DF9217500DD29F9 /* libharfbuzz.lib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E5CE9D01DF9217500DD29F9 /* libharfbuzz.lib */; };
+		4E5CE9DE1DF9217500DD29F9 /* libharfbuzzd.lib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E5CE9D11DF9217500DD29F9 /* libharfbuzzd.lib */; };
+		4E5CE9E11DF9217500DD29F9 /* ofxTrueTypeFontUL2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E5CE9D51DF9217500DD29F9 /* ofxTrueTypeFontUL2.cpp */; };
 		C9DC019415D847EB51DAA13F /* ofxLeapMotion2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E52372269152201A84E1731 /* ofxLeapMotion2.cpp */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
@@ -50,6 +58,34 @@
 		4E5CE9911DF8FE5500DD29F9 /* ImageManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ImageManager.hpp; sourceTree = "<group>"; };
 		4E5CE9931DF8FF1500DD29F9 /* CustomGalleryImageView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CustomGalleryImageView.cpp; sourceTree = "<group>"; };
 		4E5CE9941DF8FF1500DD29F9 /* CustomGalleryImageView.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CustomGalleryImageView.hpp; sourceTree = "<group>"; };
+		4E5CE9971DF91B9700DD29F9 /* PinHoleManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PinHoleManager.cpp; sourceTree = "<group>"; };
+		4E5CE9981DF91B9700DD29F9 /* PinHoleManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PinHoleManager.hpp; sourceTree = "<group>"; };
+		4E5CE99D1DF9215800DD29F9 /* FontManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FontManager.cpp; sourceTree = "<group>"; };
+		4E5CE99E1DF9215800DD29F9 /* FontManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FontManager.hpp; sourceTree = "<group>"; };
+		4E5CE9B71DF9217500DD29F9 /* hb-blob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "hb-blob.h"; sourceTree = "<group>"; };
+		4E5CE9B81DF9217500DD29F9 /* hb-buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "hb-buffer.h"; sourceTree = "<group>"; };
+		4E5CE9B91DF9217500DD29F9 /* hb-common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "hb-common.h"; sourceTree = "<group>"; };
+		4E5CE9BA1DF9217500DD29F9 /* hb-deprecated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "hb-deprecated.h"; sourceTree = "<group>"; };
+		4E5CE9BB1DF9217500DD29F9 /* hb-face.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "hb-face.h"; sourceTree = "<group>"; };
+		4E5CE9BC1DF9217500DD29F9 /* hb-font.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "hb-font.h"; sourceTree = "<group>"; };
+		4E5CE9BD1DF9217500DD29F9 /* hb-ft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "hb-ft.h"; sourceTree = "<group>"; };
+		4E5CE9BE1DF9217500DD29F9 /* hb-glib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "hb-glib.h"; sourceTree = "<group>"; };
+		4E5CE9BF1DF9217500DD29F9 /* hb-ot-layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "hb-ot-layout.h"; sourceTree = "<group>"; };
+		4E5CE9C01DF9217500DD29F9 /* hb-ot-tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "hb-ot-tag.h"; sourceTree = "<group>"; };
+		4E5CE9C11DF9217500DD29F9 /* hb-ot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "hb-ot.h"; sourceTree = "<group>"; };
+		4E5CE9C21DF9217500DD29F9 /* hb-set.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "hb-set.h"; sourceTree = "<group>"; };
+		4E5CE9C31DF9217500DD29F9 /* hb-shape-plan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "hb-shape-plan.h"; sourceTree = "<group>"; };
+		4E5CE9C41DF9217500DD29F9 /* hb-shape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "hb-shape.h"; sourceTree = "<group>"; };
+		4E5CE9C51DF9217500DD29F9 /* hb-unicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "hb-unicode.h"; sourceTree = "<group>"; };
+		4E5CE9C61DF9217500DD29F9 /* hb-version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "hb-version.h"; sourceTree = "<group>"; };
+		4E5CE9C71DF9217500DD29F9 /* hb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hb.h; sourceTree = "<group>"; };
+		4E5CE9CA1DF9217500DD29F9 /* libharfbuzz.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libharfbuzz.a; sourceTree = "<group>"; };
+		4E5CE9CD1DF9217500DD29F9 /* libharfbuzz.lib */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libharfbuzz.lib; sourceTree = "<group>"; };
+		4E5CE9CE1DF9217500DD29F9 /* libharfbuzzd.lib */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libharfbuzzd.lib; sourceTree = "<group>"; };
+		4E5CE9D01DF9217500DD29F9 /* libharfbuzz.lib */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libharfbuzz.lib; sourceTree = "<group>"; };
+		4E5CE9D11DF9217500DD29F9 /* libharfbuzzd.lib */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libharfbuzzd.lib; sourceTree = "<group>"; };
+		4E5CE9D51DF9217500DD29F9 /* ofxTrueTypeFontUL2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxTrueTypeFontUL2.cpp; sourceTree = "<group>"; };
+		4E5CE9D61DF9217500DD29F9 /* ofxTrueTypeFontUL2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxTrueTypeFontUL2.h; sourceTree = "<group>"; };
 		9E52372269152201A84E1731 /* ofxLeapMotion2.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxLeapMotion2.cpp; path = ../../../addons/ofxLeapMotion2/src/ofxLeapMotion2.cpp; sourceTree = SOURCE_ROOT; };
 		C2D0E563DD28B9867A44D774 /* Leap.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Leap.h; path = ../../../addons/ofxLeapMotion2/libs/include/Leap.h; sourceTree = SOURCE_ROOT; };
 		CE599C30D4EE3F35EA5374BF /* LeapMath.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = LeapMath.h; path = ../../../addons/ofxLeapMotion2/libs/include/LeapMath.h; sourceTree = SOURCE_ROOT; };
@@ -68,7 +104,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E5CE9DE1DF9217500DD29F9 /* libharfbuzzd.lib in Frameworks */,
+				4E5CE9DC1DF9217500DD29F9 /* libharfbuzzd.lib in Frameworks */,
+				4E5CE9DD1DF9217500DD29F9 /* libharfbuzz.lib in Frameworks */,
+				4E5CE9DB1DF9217500DD29F9 /* libharfbuzz.lib in Frameworks */,
 				E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */,
+				4E5CE9DA1DF9217500DD29F9 /* libharfbuzz.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,8 +138,6 @@
 			children = (
 				4E5CE9901DF8FE5500DD29F9 /* ImageManager.cpp */,
 				4E5CE9911DF8FE5500DD29F9 /* ImageManager.hpp */,
-				4E5CE9931DF8FF1500DD29F9 /* CustomGalleryImageView.cpp */,
-				4E5CE9941DF8FF1500DD29F9 /* CustomGalleryImageView.hpp */,
 			);
 			name = imagemanager;
 			sourceTree = "<group>";
@@ -106,8 +145,140 @@
 		4E5CE9961DF91A4200DD29F9 /* pinhole */ = {
 			isa = PBXGroup;
 			children = (
+				4E5CE9971DF91B9700DD29F9 /* PinHoleManager.cpp */,
+				4E5CE9981DF91B9700DD29F9 /* PinHoleManager.hpp */,
 			);
 			name = pinhole;
+			sourceTree = "<group>";
+		};
+		4E5CE99A1DF91BB400DD29F9 /* gallery */ = {
+			isa = PBXGroup;
+			children = (
+				4E5CE9931DF8FF1500DD29F9 /* CustomGalleryImageView.cpp */,
+				4E5CE9941DF8FF1500DD29F9 /* CustomGalleryImageView.hpp */,
+			);
+			name = gallery;
+			sourceTree = "<group>";
+		};
+		4E5CE99B1DF91BF700DD29F9 /* interface */ = {
+			isa = PBXGroup;
+			children = (
+				4E5CE99A1DF91BB400DD29F9 /* gallery */,
+				4E5CE9961DF91A4200DD29F9 /* pinhole */,
+			);
+			name = interface;
+			sourceTree = "<group>";
+		};
+		4E5CE99C1DF9213400DD29F9 /* fontmanager */ = {
+			isa = PBXGroup;
+			children = (
+				4E5CE99D1DF9215800DD29F9 /* FontManager.cpp */,
+				4E5CE99E1DF9215800DD29F9 /* FontManager.hpp */,
+			);
+			name = fontmanager;
+			sourceTree = "<group>";
+		};
+		4E5CE9A01DF9217500DD29F9 /* ofxTrueTypeFontUL2 */ = {
+			isa = PBXGroup;
+			children = (
+				4E5CE9B41DF9217500DD29F9 /* libs */,
+				4E5CE9D41DF9217500DD29F9 /* src */,
+			);
+			path = ofxTrueTypeFontUL2;
+			sourceTree = "<group>";
+		};
+		4E5CE9B41DF9217500DD29F9 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				4E5CE9B51DF9217500DD29F9 /* harfbuzz */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		4E5CE9B51DF9217500DD29F9 /* harfbuzz */ = {
+			isa = PBXGroup;
+			children = (
+				4E5CE9B61DF9217500DD29F9 /* include */,
+				4E5CE9C81DF9217500DD29F9 /* lib */,
+			);
+			path = harfbuzz;
+			sourceTree = "<group>";
+		};
+		4E5CE9B61DF9217500DD29F9 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				4E5CE9B71DF9217500DD29F9 /* hb-blob.h */,
+				4E5CE9B81DF9217500DD29F9 /* hb-buffer.h */,
+				4E5CE9B91DF9217500DD29F9 /* hb-common.h */,
+				4E5CE9BA1DF9217500DD29F9 /* hb-deprecated.h */,
+				4E5CE9BB1DF9217500DD29F9 /* hb-face.h */,
+				4E5CE9BC1DF9217500DD29F9 /* hb-font.h */,
+				4E5CE9BD1DF9217500DD29F9 /* hb-ft.h */,
+				4E5CE9BE1DF9217500DD29F9 /* hb-glib.h */,
+				4E5CE9BF1DF9217500DD29F9 /* hb-ot-layout.h */,
+				4E5CE9C01DF9217500DD29F9 /* hb-ot-tag.h */,
+				4E5CE9C11DF9217500DD29F9 /* hb-ot.h */,
+				4E5CE9C21DF9217500DD29F9 /* hb-set.h */,
+				4E5CE9C31DF9217500DD29F9 /* hb-shape-plan.h */,
+				4E5CE9C41DF9217500DD29F9 /* hb-shape.h */,
+				4E5CE9C51DF9217500DD29F9 /* hb-unicode.h */,
+				4E5CE9C61DF9217500DD29F9 /* hb-version.h */,
+				4E5CE9C71DF9217500DD29F9 /* hb.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		4E5CE9C81DF9217500DD29F9 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				4E5CE9C91DF9217500DD29F9 /* osx */,
+				4E5CE9CB1DF9217500DD29F9 /* vs */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		4E5CE9C91DF9217500DD29F9 /* osx */ = {
+			isa = PBXGroup;
+			children = (
+				4E5CE9CA1DF9217500DD29F9 /* libharfbuzz.a */,
+			);
+			path = osx;
+			sourceTree = "<group>";
+		};
+		4E5CE9CB1DF9217500DD29F9 /* vs */ = {
+			isa = PBXGroup;
+			children = (
+				4E5CE9CC1DF9217500DD29F9 /* Win32 */,
+				4E5CE9CF1DF9217500DD29F9 /* x64 */,
+			);
+			path = vs;
+			sourceTree = "<group>";
+		};
+		4E5CE9CC1DF9217500DD29F9 /* Win32 */ = {
+			isa = PBXGroup;
+			children = (
+				4E5CE9CD1DF9217500DD29F9 /* libharfbuzz.lib */,
+				4E5CE9CE1DF9217500DD29F9 /* libharfbuzzd.lib */,
+			);
+			path = Win32;
+			sourceTree = "<group>";
+		};
+		4E5CE9CF1DF9217500DD29F9 /* x64 */ = {
+			isa = PBXGroup;
+			children = (
+				4E5CE9D01DF9217500DD29F9 /* libharfbuzz.lib */,
+				4E5CE9D11DF9217500DD29F9 /* libharfbuzzd.lib */,
+			);
+			path = x64;
+			sourceTree = "<group>";
+		};
+		4E5CE9D41DF9217500DD29F9 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				4E5CE9D51DF9217500DD29F9 /* ofxTrueTypeFontUL2.cpp */,
+				4E5CE9D61DF9217500DD29F9 /* ofxTrueTypeFontUL2.h */,
+			);
+			path = src;
 			sourceTree = "<group>";
 		};
 		5D229E8F0405ACDFC37A0012 /* include */ = {
@@ -138,6 +309,7 @@
 		BB4B014C10F69532006C3DED /* addons */ = {
 			isa = PBXGroup;
 			children = (
+				4E5CE9A01DF9217500DD29F9 /* ofxTrueTypeFontUL2 */,
 				1E69E56363BB709D30E47967 /* ofxLeapMotion2 */,
 			);
 			name = addons;
@@ -167,7 +339,8 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				4E5CE9961DF91A4200DD29F9 /* pinhole */,
+				4E5CE99C1DF9213400DD29F9 /* fontmanager */,
+				4E5CE99B1DF91BF700DD29F9 /* interface */,
 				4E5CE98F1DF8FE4500DD29F9 /* imagemanager */,
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
 				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
@@ -289,8 +462,11 @@
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
 				C9DC019415D847EB51DAA13F /* ofxLeapMotion2.cpp in Sources */,
+				4E5CE9E11DF9217500DD29F9 /* ofxTrueTypeFontUL2.cpp in Sources */,
+				4E5CE99F1DF9215800DD29F9 /* FontManager.cpp in Sources */,
 				4E5CE9921DF8FE5500DD29F9 /* ImageManager.cpp in Sources */,
 				4E5CE9951DF8FF1500DD29F9 /* CustomGalleryImageView.cpp in Sources */,
+				4E5CE9991DF91B9700DD29F9 /* PinHoleManager.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,7 +594,12 @@
 				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
 				INFOPLIST_FILE = "openFrameworks-Info.plist";
 				INSTALL_PATH = /Applications;
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ofxTrueTypeFontUL2/libs/harfbuzz/lib/osx",
+					"$(PROJECT_DIR)/ofxTrueTypeFontUL2/libs/harfbuzz/lib/vs/Win32",
+					"$(PROJECT_DIR)/ofxTrueTypeFontUL2/libs/harfbuzz/lib/vs/x64",
+				);
 				OTHER_LDFLAGS = (
 					"$(OF_CORE_FRAMEWORKS)",
 					"$(OF_CORE_LIBS)",
@@ -455,7 +636,12 @@
 				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
 				INFOPLIST_FILE = "openFrameworks-Info.plist";
 				INSTALL_PATH = /Applications;
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ofxTrueTypeFontUL2/libs/harfbuzz/lib/osx",
+					"$(PROJECT_DIR)/ofxTrueTypeFontUL2/libs/harfbuzz/lib/vs/Win32",
+					"$(PROJECT_DIR)/ofxTrueTypeFontUL2/libs/harfbuzz/lib/vs/x64",
+				);
 				OTHER_LDFLAGS = (
 					"$(OF_CORE_FRAMEWORKS)",
 					"$(OF_CORE_LIBS)",
