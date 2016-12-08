@@ -2,6 +2,7 @@
 #include "ofMain.h"
 #include "ofxLeapMotion2.h"
 #include "ImageManager.hpp"
+#include "SideUIManager.hpp"
 
 class ofApp : public ofBaseApp{
 
@@ -9,14 +10,14 @@ private:
     ofxLeapMotion leap;
     vector <ofxLeapMotionSimpleHand> simpleHands;
 
-
     vector <int> fingersFound;
     ofEasyCam cam;
     ofPoint hand[4];
     ofLight light;
 
     ofVec3f pastHand;
-    
+
+    SideUIManager mSideUIManager;
 	public:
 		void setup();
 		void update();
