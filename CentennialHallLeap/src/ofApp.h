@@ -1,7 +1,7 @@
 #pragma once
-
 #include "ofMain.h"
 #include "ofxLeapMotion2.h"
+#include "ImageManager.hpp"
 class ofApp : public ofBaseApp{
 
 private:
@@ -11,25 +11,9 @@ private:
 
     vector <int> fingersFound;
     ofEasyCam cam;
-
     ofPoint hand[4];
     ofLight light;
-
-    ofTrueTypeFont font;
-    bool preHandNum;
-    bool startCount;
-    bool mode;
-    int timeStart;
-    int gravity;
-
-    float rad,rad2;
-
-    ofImage image[10];
-
-    bool drop;
-
     
-
 	public:
 		void setup();
 		void update();
