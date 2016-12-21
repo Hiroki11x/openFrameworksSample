@@ -1,0 +1,38 @@
+//
+//  SideGuiComponent.cpp
+//  CentennialHallLeap
+//
+//  Created by HirokiNaganuma on 12/8/16.
+//
+//
+
+#include "SideGuiComponent.hpp"
+
+
+void SideGuiComponent::load(string path){
+    mPDF.load(path);
+}
+
+void SideGuiComponent::init(){
+    mPath.setFilled(false);
+    mPath.setStrokeWidth(2.5);
+    mPath.setStrokeColor(ofColor(255,50,120,220));
+    for (int i = 0; i < mPDF.getNumPath(); i++){
+        ofPath& path = mPDF.getPathAt(i);
+        mPath.append(path);
+    }
+    mPath.close();
+}
+
+void SideGuiComponent::update(){
+
+}
+
+void SideGuiComponent::draw(){
+    float scale = ofGetWidth() / mPDF.getWidth();
+    ofPushMatrix();
+
+    ofScale(scale, scale);
+    mPath.draw();
+    ofPopMatrix();
+}

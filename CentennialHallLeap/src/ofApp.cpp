@@ -18,10 +18,12 @@ void ofApp::setup(){
     FontManager::init();
 
     pastHand = ofVec3f(0,0,0);
+    mSideUIManager.init();
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
+    mSideUIManager.update();
     fingersFound.clear();
     simpleHands = leap.getSimpleHands();//simpleHandsはベクター
     if( leap.isFrameNew() && simpleHands.size() ){//LeapMotionのフレームが更新されるかつ、ひとつ以上の手が検出されたとき
@@ -114,7 +116,8 @@ void ofApp::draw(){
             ofDrawLine(dip.x, dip.y, dip.z, tip.x, tip.y, tip.z);
         }//手の関節を描画するためのfor文
     }//手の数だけfor文を回す
-
+    cam.end();
+    mSideUIManager.drawGui();
 }
 
 //--------------------------------------------------------------
