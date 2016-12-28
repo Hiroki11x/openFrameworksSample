@@ -32,7 +32,10 @@ void GraphGuiComponent::draw(){
     ofDisableDepthTest();
 
     for(int i = 0; i < graphNum; i++){
-        ofSetColor(graphBackColor);
+        ofSetColor(ColorManager::maincolor.x,
+                           ColorManager::maincolor.y,
+                           ColorManager::maincolor.z,
+                           ColorManager::maincolor.w);
         ofFill();
         ofDrawRectangle(10,-92.3 + 20.6 * i, graphParamatar[i], 18);
         ofSetColor(255);

@@ -85,7 +85,10 @@ void TargetGuiComponent::draw(){
 
     ofPushMatrix();
     ofTranslate(position);
-    ofSetColor(targetColor, 180);
+    ofSetColor(ofColor(ColorManager::maincolor.x,
+                       ColorManager::maincolor.y,
+                       ColorManager::maincolor.z,
+                       ColorManager::maincolor.w), 180);
     ofSetLineWidth(8);
     ofRotateZ(insideDeg);
     insideDrawer.draw();
@@ -95,12 +98,18 @@ void TargetGuiComponent::draw(){
     ofTranslate(position);
     ofRotateZ(outsideDeg);
     ofSetLineWidth(16);
-    ofSetColor(targetColor,150);
+    ofSetColor(ofColor(ColorManager::maincolor.x,
+                       ColorManager::maincolor.y,
+                       ColorManager::maincolor.z,
+                       ColorManager::maincolor.w),150);
     outsideDrawer.draw();
     ofPopMatrix();
 
     ofSetLineWidth(2);
-    ofSetColor(255,50,120,220);
+    ofSetColor(ColorManager::maincolor.x,
+               ColorManager::maincolor.y,
+               ColorManager::maincolor.z,
+               ColorManager::maincolor.w);
     ofDrawLine(0, position.y, ofGetWidth(), position.y);
     ofDrawLine(position.x, 0, position.x, ofGetHeight());
 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E3A07F01DFA5563002F2AE8 /* nonLeapApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E3A07EE1DFA5562002F2AE8 /* nonLeapApp.cpp */; };
+		4E3A07F31DFA58C7002F2AE8 /* ColorManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E3A07F11DFA58C7002F2AE8 /* ColorManager.cpp */; };
 		4E5CE9921DF8FE5500DD29F9 /* ImageManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E5CE9901DF8FE5500DD29F9 /* ImageManager.cpp */; };
 		4E5CE9951DF8FF1500DD29F9 /* CustomGalleryImageView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E5CE9931DF8FF1500DD29F9 /* CustomGalleryImageView.cpp */; };
 		4E5CE9991DF91B9700DD29F9 /* PinHoleManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E5CE9971DF91B9700DD29F9 /* PinHoleManager.cpp */; };
@@ -111,6 +113,12 @@
 		4E5CEAD01DF9369200DD29F9 /* dev_ofpath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E5CEA781DF9369200DD29F9 /* dev_ofpath.cpp */; };
 		4E5CEAD11DF9369200DD29F9 /* ofxPDF.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E5CEA791DF9369200DD29F9 /* ofxPDF.cpp */; };
 		4E5CEAD71DF9390E00DD29F9 /* ClockWiseFrameGui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E5CEAD51DF9390E00DD29F9 /* ClockWiseFrameGui.cpp */; };
+		4EF7932A1DF95A1B00C85943 /* SyphonNameboundClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF793181DF95A1B00C85943 /* SyphonNameboundClient.m */; };
+		4EF7932C1DF95A1B00C85943 /* ofxSyphonClient.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4EF7931E1DF95A1B00C85943 /* ofxSyphonClient.mm */; };
+		4EF7932D1DF95A1B00C85943 /* ofxSyphonServer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4EF793201DF95A1B00C85943 /* ofxSyphonServer.mm */; };
+		4EF7932E1DF95A1B00C85943 /* ofxSyphonServerDirectory.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4EF793221DF95A1B00C85943 /* ofxSyphonServerDirectory.mm */; };
+		4EF793351DF95B5000C85943 /* Syphon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EF793151DF95A1B00C85943 /* Syphon.framework */; };
+		4EF793361DF95B5000C85943 /* Syphon.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4EF793151DF95A1B00C85943 /* Syphon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C9DC019415D847EB51DAA13F /* ofxLeapMotion2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E52372269152201A84E1731 /* ofxLeapMotion2.cpp */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
@@ -141,6 +149,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				4EF793361DF95B5000C85943 /* Syphon.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +157,10 @@
 
 /* Begin PBXFileReference section */
 		3FF9A5F0C37B2FE4F0C919D4 /* ofxLeapMotion2.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxLeapMotion2.h; path = ../../../addons/ofxLeapMotion2/src/ofxLeapMotion2.h; sourceTree = SOURCE_ROOT; };
+		4E3A07EE1DFA5562002F2AE8 /* nonLeapApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = nonLeapApp.cpp; sourceTree = "<group>"; };
+		4E3A07EF1DFA5562002F2AE8 /* nonLeapApp.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = nonLeapApp.hpp; sourceTree = "<group>"; };
+		4E3A07F11DFA58C7002F2AE8 /* ColorManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ColorManager.cpp; sourceTree = "<group>"; };
+		4E3A07F21DFA58C7002F2AE8 /* ColorManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ColorManager.hpp; sourceTree = "<group>"; };
 		4E5CE9901DF8FE5500DD29F9 /* ImageManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImageManager.cpp; sourceTree = "<group>"; };
 		4E5CE9911DF8FE5500DD29F9 /* ImageManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ImageManager.hpp; sourceTree = "<group>"; };
 		4E5CE9931DF8FF1500DD29F9 /* CustomGalleryImageView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CustomGalleryImageView.cpp; sourceTree = "<group>"; };
@@ -297,6 +310,16 @@
 		4E5CEA7A1DF9369200DD29F9 /* ofxPDF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxPDF.h; sourceTree = "<group>"; };
 		4E5CEAD51DF9390E00DD29F9 /* ClockWiseFrameGui.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ClockWiseFrameGui.cpp; sourceTree = "<group>"; };
 		4E5CEAD61DF9390E00DD29F9 /* ClockWiseFrameGui.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ClockWiseFrameGui.hpp; sourceTree = "<group>"; };
+		4EF793151DF95A1B00C85943 /* Syphon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Syphon.framework; sourceTree = "<group>"; };
+		4EF793171DF95A1B00C85943 /* SyphonNameboundClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyphonNameboundClient.h; sourceTree = "<group>"; };
+		4EF793181DF95A1B00C85943 /* SyphonNameboundClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyphonNameboundClient.m; sourceTree = "<group>"; };
+		4EF7931C1DF95A1B00C85943 /* ofxSyphon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSyphon.h; sourceTree = "<group>"; };
+		4EF7931D1DF95A1B00C85943 /* ofxSyphonClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSyphonClient.h; sourceTree = "<group>"; };
+		4EF7931E1DF95A1B00C85943 /* ofxSyphonClient.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxSyphonClient.mm; sourceTree = "<group>"; };
+		4EF7931F1DF95A1B00C85943 /* ofxSyphonServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSyphonServer.h; sourceTree = "<group>"; };
+		4EF793201DF95A1B00C85943 /* ofxSyphonServer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxSyphonServer.mm; sourceTree = "<group>"; };
+		4EF793211DF95A1B00C85943 /* ofxSyphonServerDirectory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSyphonServerDirectory.h; sourceTree = "<group>"; };
+		4EF793221DF95A1B00C85943 /* ofxSyphonServerDirectory.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxSyphonServerDirectory.mm; sourceTree = "<group>"; };
 		9E52372269152201A84E1731 /* ofxLeapMotion2.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxLeapMotion2.cpp; path = ../../../addons/ofxLeapMotion2/src/ofxLeapMotion2.cpp; sourceTree = SOURCE_ROOT; };
 		C2D0E563DD28B9867A44D774 /* Leap.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Leap.h; path = ../../../addons/ofxLeapMotion2/libs/include/Leap.h; sourceTree = SOURCE_ROOT; };
 		CE599C30D4EE3F35EA5374BF /* LeapMath.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = LeapMath.h; path = ../../../addons/ofxLeapMotion2/libs/include/LeapMath.h; sourceTree = SOURCE_ROOT; };
@@ -319,6 +342,7 @@
 				4E5CE9DC1DF9217500DD29F9 /* libharfbuzzd.lib in Frameworks */,
 				4E5CE9DD1DF9217500DD29F9 /* libharfbuzz.lib in Frameworks */,
 				4E5CE9DB1DF9217500DD29F9 /* libharfbuzz.lib in Frameworks */,
+				4EF793351DF95B5000C85943 /* Syphon.framework in Frameworks */,
 				E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */,
 				4E5CE9DA1DF9217500DD29F9 /* libharfbuzz.a in Frameworks */,
 			);
@@ -522,6 +546,8 @@
 				4E5CE9FD1DF9367C00DD29F9 /* SideGuiComponent.hpp */,
 				4E5CEAD51DF9390E00DD29F9 /* ClockWiseFrameGui.cpp */,
 				4E5CEAD61DF9390E00DD29F9 /* ClockWiseFrameGui.hpp */,
+				4E3A07F11DFA58C7002F2AE8 /* ColorManager.cpp */,
+				4E3A07F21DFA58C7002F2AE8 /* ColorManager.hpp */,
 			);
 			name = component;
 			sourceTree = "<group>";
@@ -696,6 +722,71 @@
 			path = src;
 			sourceTree = "<group>";
 		};
+		4EF792F31DF95A1B00C85943 /* ofxSyphon */ = {
+			isa = PBXGroup;
+			children = (
+				4EF793111DF95A1B00C85943 /* libs */,
+				4EF7931B1DF95A1B00C85943 /* src */,
+			);
+			path = ofxSyphon;
+			sourceTree = "<group>";
+		};
+		4EF793111DF95A1B00C85943 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				4EF793121DF95A1B00C85943 /* Syphon */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		4EF793121DF95A1B00C85943 /* Syphon */ = {
+			isa = PBXGroup;
+			children = (
+				4EF793131DF95A1B00C85943 /* lib */,
+				4EF793161DF95A1B00C85943 /* src */,
+			);
+			path = Syphon;
+			sourceTree = "<group>";
+		};
+		4EF793131DF95A1B00C85943 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				4EF793141DF95A1B00C85943 /* osx */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		4EF793141DF95A1B00C85943 /* osx */ = {
+			isa = PBXGroup;
+			children = (
+				4EF793151DF95A1B00C85943 /* Syphon.framework */,
+			);
+			path = osx;
+			sourceTree = "<group>";
+		};
+		4EF793161DF95A1B00C85943 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				4EF793171DF95A1B00C85943 /* SyphonNameboundClient.h */,
+				4EF793181DF95A1B00C85943 /* SyphonNameboundClient.m */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		4EF7931B1DF95A1B00C85943 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				4EF7931C1DF95A1B00C85943 /* ofxSyphon.h */,
+				4EF7931D1DF95A1B00C85943 /* ofxSyphonClient.h */,
+				4EF7931E1DF95A1B00C85943 /* ofxSyphonClient.mm */,
+				4EF7931F1DF95A1B00C85943 /* ofxSyphonServer.h */,
+				4EF793201DF95A1B00C85943 /* ofxSyphonServer.mm */,
+				4EF793211DF95A1B00C85943 /* ofxSyphonServerDirectory.h */,
+				4EF793221DF95A1B00C85943 /* ofxSyphonServerDirectory.mm */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
 		5D229E8F0405ACDFC37A0012 /* include */ = {
 			isa = PBXGroup;
 			children = (
@@ -724,6 +815,7 @@
 		BB4B014C10F69532006C3DED /* addons */ = {
 			isa = PBXGroup;
 			children = (
+				4EF792F31DF95A1B00C85943 /* ofxSyphon */,
 				4E5CE9FF1DF9369200DD29F9 /* ofxPDF */,
 				4E5CE9A01DF9217500DD29F9 /* ofxTrueTypeFontUL2 */,
 				1E69E56363BB709D30E47967 /* ofxLeapMotion2 */,
@@ -761,6 +853,8 @@
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
 				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
 				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
+				4E3A07EE1DFA5562002F2AE8 /* nonLeapApp.cpp */,
+				4E3A07EF1DFA5562002F2AE8 /* nonLeapApp.hpp */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -881,6 +975,7 @@
 				4E5CEACC1DF9369200DD29F9 /* pdf_write.c in Sources */,
 				4E5CEAAB1DF9369200DD29F9 /* res_shade.c in Sources */,
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
+				4E3A07F01DFA5563002F2AE8 /* nonLeapApp.cpp in Sources */,
 				4E5CEA9E1DF9369200DD29F9 /* filt_lzwd.c in Sources */,
 				4E5CEAB41DF9369200DD29F9 /* pdf_cmap_parse.c in Sources */,
 				4E5CEA9A1DF9369200DD29F9 /* doc_outline.c in Sources */,
@@ -893,6 +988,7 @@
 				4E5CEAA21DF9369200DD29F9 /* image_save.c in Sources */,
 				4E5CE9FE1DF9367C00DD29F9 /* SideGuiComponent.cpp in Sources */,
 				4E5CE9F21DF935C600DD29F9 /* RotateCircleGuiComponent.cpp in Sources */,
+				4E3A07F31DFA58C7002F2AE8 /* ColorManager.cpp in Sources */,
 				4E5CEAC11DF9369200DD29F9 /* pdf_object.c in Sources */,
 				4E5CEAA61DF9369200DD29F9 /* res_colorspace.c in Sources */,
 				4E5CEA961DF9369200DD29F9 /* dev_text.c in Sources */,
@@ -900,6 +996,7 @@
 				4E5CEABD1DF9369200DD29F9 /* pdf_interpret.c in Sources */,
 				4E5CEAC31DF9369200DD29F9 /* pdf_page.c in Sources */,
 				4E5CEAB61DF9369200DD29F9 /* pdf_colorspace.c in Sources */,
+				4EF7932E1DF95A1B00C85943 /* ofxSyphonServerDirectory.mm in Sources */,
 				4E5CEAB51DF9369200DD29F9 /* pdf_cmap_table.c in Sources */,
 				4E5CEA9B1DF9369200DD29F9 /* filt_basic.c in Sources */,
 				4E5CEACB1DF9369200DD29F9 /* pdf_unicode.c in Sources */,
@@ -907,6 +1004,7 @@
 				4E5CEA8D1DF9369200DD29F9 /* base_string.c in Sources */,
 				4E5CEAB11DF9369200DD29F9 /* pdf_annot.c in Sources */,
 				4E5CEAA41DF9369200DD29F9 /* memento.c in Sources */,
+				4EF7932C1DF95A1B00C85943 /* ofxSyphonClient.mm in Sources */,
 				4E5CEAA71DF9369200DD29F9 /* res_font.c in Sources */,
 				4E5CEA801DF9369200DD29F9 /* draw_edge.c in Sources */,
 				4E5CEAC81DF9369200DD29F9 /* pdf_store.c in Sources */,
@@ -917,6 +1015,7 @@
 				4E5CEA9F1DF9369200DD29F9 /* filt_predict.c in Sources */,
 				4E5CEAA11DF9369200DD29F9 /* image_png.c in Sources */,
 				4E5CEABA1DF9369200DD29F9 /* pdf_fontfile.c in Sources */,
+				4EF7932D1DF95A1B00C85943 /* ofxSyphonServer.mm in Sources */,
 				4E5CEAB91DF9369200DD29F9 /* pdf_font.c in Sources */,
 				4E5CEA981DF9369200DD29F9 /* doc_document.c in Sources */,
 				4E5CEAB01DF9369200DD29F9 /* stm_read.c in Sources */,
@@ -967,6 +1066,7 @@
 				4E5CEAA91DF9369200DD29F9 /* res_path.c in Sources */,
 				4E5CE9F51DF935EC00DD29F9 /* GridGuiComponent.cpp in Sources */,
 				4E5CEA821DF9369200DD29F9 /* draw_mesh.c in Sources */,
+				4EF7932A1DF95A1B00C85943 /* SyphonNameboundClient.m in Sources */,
 				4E5CEAB81DF9369200DD29F9 /* pdf_encoding.c in Sources */,
 				4E5CEA901DF9369200DD29F9 /* crypt_arc4.c in Sources */,
 				4E5CEA8B1DF9369200DD29F9 /* base_hash.c in Sources */,
@@ -1086,6 +1186,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(PROJECT_DIR)/ofxSyphon/libs/Syphon/lib/osx",
 				);
 				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/glut/lib/osx\"";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1104,12 +1205,14 @@
 				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
 				INFOPLIST_FILE = "openFrameworks-Info.plist";
 				INSTALL_PATH = /Applications;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ofxTrueTypeFontUL2/libs/harfbuzz/lib/osx",
 					"$(PROJECT_DIR)/ofxTrueTypeFontUL2/libs/harfbuzz/lib/vs/Win32",
 					"$(PROJECT_DIR)/ofxTrueTypeFontUL2/libs/harfbuzz/lib/vs/x64",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_LDFLAGS = (
 					"$(OF_CORE_FRAMEWORKS)",
 					"$(OF_CORE_LIBS)",
@@ -1129,6 +1232,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(PROJECT_DIR)/ofxSyphon/libs/Syphon/lib/osx",
 				);
 				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/glut/lib/osx\"";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
@@ -1146,12 +1250,14 @@
 				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
 				INFOPLIST_FILE = "openFrameworks-Info.plist";
 				INSTALL_PATH = /Applications;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ofxTrueTypeFontUL2/libs/harfbuzz/lib/osx",
 					"$(PROJECT_DIR)/ofxTrueTypeFontUL2/libs/harfbuzz/lib/vs/Win32",
 					"$(PROJECT_DIR)/ofxTrueTypeFontUL2/libs/harfbuzz/lib/vs/x64",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_LDFLAGS = (
 					"$(OF_CORE_FRAMEWORKS)",
 					"$(OF_CORE_LIBS)",

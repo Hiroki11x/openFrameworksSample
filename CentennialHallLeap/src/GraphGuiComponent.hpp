@@ -11,13 +11,15 @@
 
 #include "ofMain.h"
 #include "FontManager.hpp"
+#include "ColorManager.hpp"
 
 class GraphGuiComponent{
 
 private:
-    ofColor graphBackColor = ofColor(255,50,120,220);
-    ofColor graphStringColor = ofColor(10,255,200,180);
-    ofColor graphBarColor = ofColor(10,255,255,200);
+    ofColor graphBackColor = ofColor(ColorManager::maincolor.x,
+                                     ColorManager::maincolor.y,
+                                     ColorManager::maincolor.z,
+                                     ColorManager::maincolor.w);
 
     int graphNum;
     float graphParamatar[10];

@@ -10,10 +10,14 @@
 #define GridGuiComponent_hpp
 
 #include "ofMain.h"
+#include "ColorManager.hpp"
 
 class GridGuiComponent{
 private:
-    ofColor backCrossColor = ofColor(255,50,120,220);
+    ofColor backCrossColor = ofColor(ColorManager::maincolor.x,
+                                     ColorManager::maincolor.y,
+                                     ColorManager::maincolor.z,
+                                     ColorManager::maincolor.w);
 public:
     void draw();
 };

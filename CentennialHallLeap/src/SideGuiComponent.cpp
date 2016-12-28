@@ -16,7 +16,10 @@ void SideGuiComponent::load(string path){
 void SideGuiComponent::init(){
     mPath.setFilled(false);
     mPath.setStrokeWidth(2.5);
-    mPath.setStrokeColor(ofColor(255,50,120,220));
+    mPath.setStrokeColor(ofColor(ColorManager::maincolor.x,
+                                 ColorManager::maincolor.y,
+                                 ColorManager::maincolor.z,
+                                 ColorManager::maincolor.w));
     for (int i = 0; i < mPDF.getNumPath(); i++){
         ofPath& path = mPDF.getPathAt(i);
         mPath.append(path);
