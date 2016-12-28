@@ -11,6 +11,7 @@
 
 #include "ofMain.h"
 #include "ofxPDF.h"
+#include "ColorManager.hpp"
 
 class SideGuiComponent{
 private:

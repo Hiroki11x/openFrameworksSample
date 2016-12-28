@@ -9,6 +9,7 @@
 #include "SideUIManager.hpp"
 
 void SideUIManager::init(){
+    ColorManager::init();
     initCenterCircle();
 
     mGraphGui.init();
@@ -20,7 +21,7 @@ void SideUIManager::init(){
         mRotateCircleGui[i].setPosition(ofGetWidth() - 320+100*i, 40);
     }
 
-    mSideGui.load("pdf/uigui.pdf");
+    mSideGui.load("pdf/tpot.pdf");
     mSideGui.init();
 }
 

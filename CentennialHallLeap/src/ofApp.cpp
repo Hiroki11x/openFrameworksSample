@@ -19,6 +19,7 @@ void ofApp::setup(){
 
     pastHand = ofVec3f(0,0,0);
     mSideUIManager.init();
+    mSyphonServer.setName("Main");
 }
 
 //--------------------------------------------------------------
@@ -51,7 +52,7 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-    ofBackgroundGradient(ofColor(255), ofColor(200),  OF_GRADIENT_BAR);
+    ofBackgroundGradient(ofColor(0), ofColor(50),  OF_GRADIENT_BAR);
     ofSetColor(200);
     if(simpleHands.size()>0){
         ofVec3f tmp =simpleHands.at(0).handPos;
@@ -117,12 +118,17 @@ void ofApp::draw(){
         }//手の関節を描画するためのfor文
     }//手の数だけfor文を回す
     cam.end();
-    mSideUIManager.drawGui();
+    if(mode == 0){
+        mSideUIManager.drawGui();
+    }
+    mSyphonServer.publishScreen();
 }
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
-
+    if(key == ' '){
+        mode = (mode +1)%2;
+    }
 }
 
 //--------------------------------------------------------------

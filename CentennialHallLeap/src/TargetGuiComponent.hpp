@@ -10,6 +10,7 @@
 #define TargetGuiComponent_hpp
 
 #include "ofMain.h"
+#include "ColorManager.hpp"
 
 #define SCALE_RATE 1.4
 
@@ -31,8 +32,10 @@ public:
     float outsideSpeed = -3.0;
     float insideDeg;
     float outsideDeg;
-    ofColor targetColor = ofColor(255,50,120,220);
-
+    ofColor targetColor = ofColor(ColorManager::maincolor.x,
+                                  ColorManager::maincolor.y,
+                                  ColorManager::maincolor.z,
+                                  ColorManager::maincolor.w);
     ofVboMesh insideDrawer;
     ofVboMesh outsideDrawer;
     ofVec2f position;

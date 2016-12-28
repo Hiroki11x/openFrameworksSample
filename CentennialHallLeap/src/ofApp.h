@@ -3,6 +3,7 @@
 #include "ofxLeapMotion2.h"
 #include "ImageManager.hpp"
 #include "SideUIManager.hpp"
+#include "ofxSyphonServer.h"
 
 class ofApp : public ofBaseApp{
 
@@ -18,6 +19,9 @@ private:
     ofVec3f pastHand;
 
     SideUIManager mSideUIManager;
+    ofxSyphonServer mSyphonServer;
+
+    int mode;
 	public:
 		void setup();
 		void update();
