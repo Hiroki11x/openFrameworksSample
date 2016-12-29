@@ -47,7 +47,5 @@ void LinearAnimation::startAnimation(){
 
 //-------------------------------------------
 void LinearAnimation::keyPressed(int key){
-    if(key == 'l'){
-        startAnimation();
-    }
+
 }

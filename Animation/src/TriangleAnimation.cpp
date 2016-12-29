@@ -46,7 +46,5 @@ void TriangleAnimation::startAnimation(){
 
 //-------------------------------------------
 void TriangleAnimation::keyPressed(int key){
-    if(key == 't'){
-        startAnimation();
-    }
+
 }

@@ -58,7 +58,5 @@ void CirculerAnimation::startAnimation(){
 
 //-------------------------------------------
 void CirculerAnimation::keyPressed(int key){
-    if(key == 'c'){
-        startAnimation();
-    }
+
 }

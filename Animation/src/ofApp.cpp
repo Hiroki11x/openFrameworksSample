@@ -3,9 +3,11 @@
 //--------------------------------------------------------------
 void ofApp::setup(){
     ofSetFrameRate(30);
+    ofEnableBlendMode(OF_BLENDMODE_ALPHA);
 
     baseAnimations.push_back(new LinearAnimation());
     baseAnimations.push_back(new TriangleAnimation());
+    baseAnimations.push_back(new RotateScreen());
     baseAnimations.push_back(new RotateScreen());
     baseAnimations.push_back(new CirculerAnimation());
 
@@ -23,15 +25,20 @@ void ofApp::update(){
     for(BaseAnimation* anim : baseAnimations){
         anim->update();
     }
+    if(baseAnimations.size()>=ANIM_MAX){
+        baseAnimations.erase(baseAnimations.begin());
+    }
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
+    ofBackground(0);
+    ofSetColor(255);
     player.draw(0, 0, ofGetWidth(),ofGetHeight());
-    ofSetColor(255,200);
+
+    ofSetColor(255,50);
     ofPushMatrix();
     ofTranslate(ofGetWidth()/2, ofGetHeight()/2);
-
     for(BaseAnimation* anim : baseAnimations){
         anim->draw();
     }
@@ -47,6 +54,27 @@ void ofApp::keyPressed(int key){
         for(BaseAnimation* anim : baseAnimations){
             anim->startAnimation();
         }
+    }
+    if('1' <= key  && key <= '9'){
+        if(key - '0' < baseAnimations.size()){
+            baseAnimations.at(key - '0')->startAnimation();
+        }
+    }
+    if(key == 'r'){
+        baseAnimations.push_back(new RotateScreen());
+        baseAnimations.back()->setup();
+    }
+    if(key == 'l'){
+        baseAnimations.push_back(new LinearAnimation());
+        baseAnimations.back()->setup();
+    }
+    if(key == 'c'){
+        baseAnimations.push_back(new CirculerAnimation());
+        baseAnimations.back()->setup();
+    }
+    if(key == 't'){
+        baseAnimations.push_back(new TriangleAnimation());
+        baseAnimations.back()->setup();
     }
 }
 

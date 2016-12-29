@@ -27,7 +27,7 @@ public:
     float now;
     float duration;
     ofVec2f center_position;
-    const float position_offset = 0;
+    const float position_offset = 300;
 };
 
 #endif /* BaseAnimation_hpp */
