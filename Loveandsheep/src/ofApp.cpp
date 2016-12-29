@@ -1,46 +1,38 @@
 #include "ofApp.h"
 
-float radius;
-float radian;
-float vertex_angle;
 //--------------------------------------------------------------
 void ofApp::setup(){
     ofBackground(0);
     ofSetFrameRate(30);
-    radius = 100;
-    radian = 0;
+    for(int i = 0; i< num; i++){
+        sleep(ofRandom(1));
+        circulerAnimations.push_back(new CirculerAnimation());
+        circulerAnimations.back()->init();
+    }
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
-    radian +=0.1;
-    vertex_angle += 0.2;
-    if(radian>PI*2){
-        radian=0;
-    }
-    if(vertex_angle>PI*2){
-        vertex_angle=0;
+    for(auto circle : circulerAnimations){
+        if(circle->update()){
+            circle->setPosition(ranposgen::generateVec2f(-500, -500, 500, 500));
+            circle->setRadius(ofRandom(50,200));
+            circle->setVertexAngleOffset(ofRandom(0,2*PI));
+        }
     }
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-    ofSetColor(255,200);
     ofPushMatrix();
     ofTranslate(ofGetWidth()/2, ofGetHeight()/2);
-
-    ofDrawLine(0, 0, radius*sin(radian), radius*cos(radian));
-
-    ofSetColor(255,50);
-
-
-    ofBeginShape();
-    ofVertex(0, 0);
-    for(float i = 0; i<vertex_angle; i+=0.01f){
-        ofVertex(radius*sin(radian+i), radius*cos(radian+i));
+    for(int i = 0; i< num; i++){
+        if(i%2==1){
+            circulerAnimations.at(i)->drawFill();
+        }else{
+            circulerAnimations.at(i)->drawNoFill();
+        }
     }
-    ofEndShape();
-
     ofPopMatrix();
 }
 
