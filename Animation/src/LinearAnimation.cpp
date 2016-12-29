@@ -17,6 +17,7 @@ void LinearAnimation::reset(){
 //-------------------------------------------
 void LinearAnimation::setup(){
     center_position = ofVec2f(0,0);
+    angle_offset = ofRandom(180);
     duration = 1.f;
     dist_x =1;
     dist_y =1;
@@ -35,6 +36,7 @@ void LinearAnimation::update(){
 void LinearAnimation::draw(){
     ofPushMatrix();
     ofTranslate(center_position);
+    ofRotateZ(angle_offset);
     ofDrawLine(middle_x-dist_x,middle_x-dist_y,middle_x+dist_x,middle_y+dist_y);
     ofPopMatrix();
 }

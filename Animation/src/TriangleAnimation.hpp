@@ -23,6 +23,7 @@ public:
     void keyPressed(int key) override;
 
     float size;
+    float size_ratio;
 };
 
 #endif /* TriangleAnimation_hpp */

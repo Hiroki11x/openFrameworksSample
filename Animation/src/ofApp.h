@@ -6,7 +6,7 @@
 #include "RotateScreen.hpp"
 #include "CirculerAnimation.hpp"
 
-#define ANIM_MAX 5
+#define ANIM_MAX 8
 
 class ofApp : public ofBaseApp{
 

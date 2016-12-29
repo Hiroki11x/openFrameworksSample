@@ -17,8 +17,8 @@ void RotateScreen::reset(){
 void RotateScreen::setup(){
     center_position = ofVec2f(ofRandom(-position_offset,position_offset),ofRandom(-position_offset,position_offset));
     duration = .8f;
-    rect_w = 2000;
-    rect_h = 2000;
+    rect_w = 5000;
+    rect_h = 5000;
     angle = 0;
     angle_offset = ofRandom(180);
 }
@@ -27,7 +27,7 @@ void RotateScreen::setup(){
 void RotateScreen::update(){
     endTime =initTime+duration;
     now =ofGetElapsedTimef();
-    angle=ofxeasing::map_clamp(now,initTime,endTime,0,200,&ofxeasing::bounce::easeOut);
+    angle=ofxeasing::map_clamp(now,initTime,endTime,0,200,&ofxeasing::quint::easeOut);
 }
 
 //-------------------------------------------

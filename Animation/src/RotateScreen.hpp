@@ -26,7 +26,6 @@ public:
     float rect_w;
     float rect_h;
     float angle;
-    float angle_offset;
 };
 
 #endif /* RotateScreen_hpp */

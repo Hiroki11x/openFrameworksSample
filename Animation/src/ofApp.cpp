@@ -25,8 +25,9 @@ void ofApp::update(){
     for(BaseAnimation* anim : baseAnimations){
         anim->update();
     }
-    if(baseAnimations.size()>=ANIM_MAX){
-        baseAnimations.erase(baseAnimations.begin());
+    if(baseAnimations.size()>ANIM_MAX){
+        cout << "baseAnimations.size()" << baseAnimations.size() <<endl;
+        baseAnimations.erase(baseAnimations.begin()+0);
     }
 }
 
@@ -56,8 +57,10 @@ void ofApp::keyPressed(int key){
         }
     }
     if('1' <= key  && key <= '9'){
+        int index = key - '0';
+        cout << "key - '0'" << index << endl;
         if(key - '0' < baseAnimations.size()){
-            baseAnimations.at(key - '0')->startAnimation();
+            baseAnimations.at(index-1)->startAnimation();
         }
     }
     if(key == 'r'){

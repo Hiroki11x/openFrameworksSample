@@ -21,6 +21,7 @@ void CirculerAnimation::setup(){
     radian = 0;
     duration = 1.f;
     is_appear = true;
+    angle_offset = ofRandom(180);
 }
 
 //-------------------------------------------
@@ -41,6 +42,7 @@ void CirculerAnimation::draw(){
     if(!is_appear)return;
     ofPushMatrix();
     ofTranslate(center_position);
+    ofRotateZ(angle_offset);
     ofNoFill();
     ofBeginShape();
     for(float i = 0; i<vertex_angle; i+=0.01f){
