@@ -2,6 +2,7 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
+
     ofBackground(0);
     ofSetFrameRate(30);
     for(int i = 0; i< num; i++){
@@ -9,12 +10,13 @@ void ofApp::setup(){
         circulerAnimations.push_back(new CirculerAnimation());
         circulerAnimations.back()->init();
     }
+    isAutoLoop = false;
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
     for(auto circle : circulerAnimations){
-        if(circle->update()){
+        if(circle->update() && isAutoLoop){
             circle->setPosition(ranposgen::generateVec2f(-500, -500, 500, 500));
             circle->setRadius(ofRandom(50,200));
             circle->setVertexAngleOffset(ofRandom(0,2*PI));

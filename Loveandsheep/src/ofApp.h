@@ -26,4 +26,5 @@ class ofApp : public ofBaseApp{
 private:
     vector<CirculerAnimation *> circulerAnimations;
     const int num = 1;
+    bool isAutoLoop;
 };
