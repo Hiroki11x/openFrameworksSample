@@ -5,6 +5,7 @@ void ofApp::setup(){
     ofSetFrameRate(30);
     ofEnableBlendMode(OF_BLENDMODE_ALPHA);
 
+    baseAnimations.push_back(new MackyEffect);
     baseAnimations.push_back(new LinearAnimation());
     baseAnimations.push_back(new TriangleAnimation());
     baseAnimations.push_back(new RotateScreen());

@@ -12,6 +12,7 @@
 		4EB2718C1E14EC3900F16C03 /* TriangleAnimation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4EB2718A1E14EC3900F16C03 /* TriangleAnimation.cpp */; };
 		4EB2718F1E151EB600F16C03 /* LinearAnimation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4EB2718D1E151EB600F16C03 /* LinearAnimation.cpp */; };
 		4EB271921E15524A00F16C03 /* BaseAnimation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4EB271901E15524A00F16C03 /* BaseAnimation.cpp */; };
+		4EB271971E15DE0100F16C03 /* MackyEffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4EB271951E15DE0100F16C03 /* MackyEffect.cpp */; };
 		DCB07F3E1E13FAB700E56A9F /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = DCB07F351E13FAB700E56A9F /* README.md */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
@@ -58,6 +59,8 @@
 		4EB2718E1E151EB600F16C03 /* LinearAnimation.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LinearAnimation.hpp; sourceTree = "<group>"; };
 		4EB271901E15524A00F16C03 /* BaseAnimation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BaseAnimation.cpp; sourceTree = "<group>"; };
 		4EB271911E15524A00F16C03 /* BaseAnimation.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BaseAnimation.hpp; sourceTree = "<group>"; };
+		4EB271951E15DE0100F16C03 /* MackyEffect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MackyEffect.cpp; sourceTree = "<group>"; };
+		4EB271961E15DE0100F16C03 /* MackyEffect.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MackyEffect.hpp; sourceTree = "<group>"; };
 		DCB07F161E13FAB700E56A9F /* .appveyor.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .appveyor.yml; sourceTree = "<group>"; };
 		DCB07F171E13FAB700E56A9F /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		DCB07F181E13FAB700E56A9F /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
@@ -98,6 +101,8 @@
 				4EB2718B1E14EC3900F16C03 /* TriangleAnimation.hpp */,
 				4EB2718D1E151EB600F16C03 /* LinearAnimation.cpp */,
 				4EB2718E1E151EB600F16C03 /* LinearAnimation.hpp */,
+				4EB271951E15DE0100F16C03 /* MackyEffect.cpp */,
+				4EB271961E15DE0100F16C03 /* MackyEffect.hpp */,
 				4EB271901E15524A00F16C03 /* BaseAnimation.cpp */,
 				4EB271911E15524A00F16C03 /* BaseAnimation.hpp */,
 			);
@@ -276,6 +281,7 @@
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
 				4EB271921E15524A00F16C03 /* BaseAnimation.cpp in Sources */,
 				4EB2718C1E14EC3900F16C03 /* TriangleAnimation.cpp in Sources */,
+				4EB271971E15DE0100F16C03 /* MackyEffect.cpp in Sources */,
 				4EB271861E14E96C00F16C03 /* CirculerAnimation.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

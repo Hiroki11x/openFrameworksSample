@@ -5,6 +5,7 @@
 #include "TriangleAnimation.hpp"
 #include "RotateScreen.hpp"
 #include "CirculerAnimation.hpp"
+#include "MackyEffect.hpp"
 
 #define ANIM_MAX 8
 
