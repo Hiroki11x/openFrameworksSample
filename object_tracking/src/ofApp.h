@@ -1,8 +1,6 @@
 #pragma once
 
 #include "ofMain.h"
-#include "CirculerAnimation.hpp"
-#include "RandomPositionGenerator.hpp"
 
 class ofApp : public ofBaseApp{
 
@@ -23,8 +21,13 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
 
-private:
-    vector<CirculerAnimation *> circulerAnimations;
-    const int num = 1;
-    bool isAutoLoop;
+    void draw_matrix();
+    void draw_scene();
+
+    float m_box_z;//box及びカメラ移動のために使う、z座標
+    float z_offset;//マトリックスを無限に表示させるために
+    float matrix_size;//下にある格子状のやつ(マトリックス)
+    ofVec3f m_box_pos;//box及びカメラの座標基準
+    ofBoxPrimitive m_box;//boxの実体
+    ofCamera m_camera;//カメラの実体
 };

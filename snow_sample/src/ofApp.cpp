@@ -3,43 +3,33 @@
 //--------------------------------------------------------------
 void ofApp::setup(){
 
-    ofBackground(0);
-    ofSetFrameRate(30);
-    for(int i = 0; i< num; i++){
-        sleep(ofRandom(1));
-        circulerAnimations.push_back(new CirculerAnimation());
-        circulerAnimations.back()->init();
-    }
-    isAutoLoop = false;
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
-    for(auto circle : circulerAnimations){
-        if(circle->update() && isAutoLoop){
-            circle->setPosition(ranposgen::generateVec2f(-500, -500, 500, 500));
-            circle->setRadius(ofRandom(50,200));
-            circle->setVertexAngleOffset(ofRandom(0,2*PI));
+    for(int i = 0; i<snows.size();i++){
+        snows.at(i).update();
+        if(snows.at(i).is_expired()){
+            snows.erase(snows.begin()+i);
         }
     }
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-    ofPushMatrix();
-    ofTranslate(ofGetWidth()/2, ofGetHeight()/2);
-    for(int i = 0; i< num; i++){
-        if(i%2==1){
-            circulerAnimations.at(i)->drawFill();
-        }else{
-            circulerAnimations.at(i)->drawNoFill();
-        }
+    ofBackground(0);
+    ofSetColor(255);
+    for(auto snow : snows){
+        snow.draw();
     }
-    ofPopMatrix();
 }
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
+    for(int i = 0; i< 30; i++){
+        snows.push_back(Snow());
+        snows.back().setup(mouseX, mouseY);
+    }
 
 }
 
@@ -50,7 +40,8 @@ void ofApp::keyReleased(int key){
 
 //--------------------------------------------------------------
 void ofApp::mouseMoved(int x, int y ){
-
+//    snows.push_back(Snow());
+//    snows.back().setup(x, y);
 }
 
 //--------------------------------------------------------------

@@ -1,7 +1,14 @@
 #pragma once
 
 #include "ofMain.h"
-#include "ofxEasing.h"
+#include "LinearAnimation.hpp"
+#include "TriangleAnimation.hpp"
+#include "RotateScreen.hpp"
+#include "CirculerAnimation.hpp"
+//#include "MackyEffect.hpp"
+
+#define ANIM_MAX 8
+
 class ofApp : public ofBaseApp{
 
 	public:
@@ -24,8 +31,7 @@ class ofApp : public ofBaseApp{
         void triangle(int x,int y,float r);
         void circle_rotate(int x,int y,float r,float angle);
         void circle_outline(int x,int y,float r,float angle);
-    
-    float initTime;
+
     ofVideoPlayer player;
-		
+    vector<BaseAnimation *> baseAnimations;
 };

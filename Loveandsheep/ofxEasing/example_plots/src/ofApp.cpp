@@ -2,40 +2,42 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-
-    ofBackground(0);
-    ofSetFrameRate(30);
-    for(int i = 0; i< num; i++){
-        sleep(ofRandom(1));
-        circulerAnimations.push_back(new CirculerAnimation());
-        circulerAnimations.back()->init();
-    }
-    isAutoLoop = false;
+	//ofSetBackgroundColor(255);
+	ofSetColor(0);
+	for(size_t i=0;i<easings.size();i++){
+		plots[i].setMode(OF_PRIMITIVE_LINE_STRIP);
+		for(int x = 0; x < 100; x++){
+			auto y = ofxeasing::map(x, 0.f, 100.f, 0.f, 100.f, easings[i]);
+			plots[i].addVertex(ofVec3f(x, 100-y)); // invert y to account for OF y grows downwards
+		}
+	}
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
-    for(auto circle : circulerAnimations){
-        if(circle->update() && isAutoLoop){
-            circle->setPosition(ranposgen::generateVec2f(-500, -500, 500, 500));
-            circle->setRadius(ofRandom(50,200));
-            circle->setVertexAngleOffset(ofRandom(0,2*PI));
-        }
-    }
+
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-    ofPushMatrix();
-    ofTranslate(ofGetWidth()/2, ofGetHeight()/2);
-    for(int i = 0; i< num; i++){
-        if(i%2==1){
-            circulerAnimations.at(i)->drawFill();
-        }else{
-            circulerAnimations.at(i)->drawNoFill();
-        }
-    }
-    ofPopMatrix();
+	auto x = 40;
+	auto y = 40;
+	auto i = 0;
+	for(auto & plot: plots){
+		ofPushMatrix();
+		ofTranslate(x,y);
+		plot.draw();
+		ofDrawBitmapString(easingNames[i], 0, 120);
+		ofDrawLine(0,0,0,100);
+		ofDrawLine(0,100,100,100);
+		ofPopMatrix();
+		x += 140;
+		i++;
+		if(x+140>ofGetWidth()){
+			x = 40;
+			y += 200;
+		}
+	}
 }
 
 //--------------------------------------------------------------
@@ -89,6 +91,6 @@ void ofApp::gotMessage(ofMessage msg){
 }
 
 //--------------------------------------------------------------
-void ofApp::dragEvent(ofDragInfo dragInfo){ 
+void ofApp::dragEvent(ofDragInfo dragInfo){
 
 }
