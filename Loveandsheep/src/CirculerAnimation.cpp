@@ -9,7 +9,6 @@
 #include "CirculerAnimation.hpp"
 
 CirculerAnimation::CirculerAnimation(){
-
 }
 
 void CirculerAnimation::init(){

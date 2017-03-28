@@ -1,13 +1,6 @@
 #pragma once
 
 #include "ofMain.h"
-#include "LinearAnimation.hpp"
-#include "TriangleAnimation.hpp"
-#include "RotateScreen.hpp"
-#include "CirculerAnimation.hpp"
-//#include "MackyEffect.hpp"
-
-#define ANIM_MAX 8
 
 class ofApp : public ofBaseApp{
 
@@ -27,11 +20,14 @@ class ofApp : public ofBaseApp{
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
-        void rotateScreen(int center_x,int center_y,int angle);
-        void triangle(int x,int y,float r);
-        void circle_rotate(int x,int y,float r,float angle);
-        void circle_outline(int x,int y,float r,float angle);
 
-    ofVideoPlayer player;
-    vector<BaseAnimation *> baseAnimations;
+    void draw_matrix();
+    void draw_scene();
+
+    float m_box_z;//box及びカメラ移動のために使う、z座標
+    float z_offset;//マトリックスを無限に表示させるために
+    float matrix_size;//下にある格子状のやつ(マトリックス)
+    ofVec3f m_box_pos;//box及びカメラの座標基準
+    ofBoxPrimitive m_box;//boxの実体
+    ofCamera m_camera;//カメラの実体
 };
