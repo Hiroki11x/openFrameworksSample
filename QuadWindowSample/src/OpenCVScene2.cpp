@@ -28,7 +28,7 @@ void OpenCVScene2::setup(){
     //    img[0].allocate(CAM_WIDTH, CROP_HEIGHT, OF_IMAGE_COLOR);
 
     //長田 192.168.157.5
-    cap[1] = cv::VideoCapture("http://192.168.157.5:7890/ipvideo.mjpg");
+    cap[1] = cv::VideoCapture("http://192.168.149.88:8080/?action=stream");
     img[1].allocate(CAM_WIDTH, CROP_HEIGHT, OF_IMAGE_COLOR);
 
     //奥村 192.168.145.27 (KeiのPCの設定的に、きつい)
@@ -105,29 +105,18 @@ void OpenCVScene2::draw(){
     screenFbo[1].draw(0,0);
 
     //---------OpenCV Sample として追加 ---------
-    //現在のモードに応じて、表示する映像を切り替え
-    switch (videoMode) {
+    //グレースケール映像
+    grayImage.draw(0, 0, ofGetWidth()/2, ofGetHeight()/2);
 
-        case 1:
-            //グレースケール映像
-            grayImage.draw(0, 0, ofGetWidth(), ofGetHeight());
-            break;
 
-        case 2:
-            //背景画像
-            grayBg.draw(0, 0, ofGetWidth(), ofGetHeight());
-            break;
+    //背景画像
+    grayBg.draw(ofGetWidth()/2, 0, ofGetWidth()/2, ofGetHeight()/2);
 
-        case 3:
-            //2値化された差分映像
-            grayDiff.draw(0, 0, ofGetWidth(), ofGetHeight());
-            break;
+    //2値化された差分映像
+    grayDiff.draw(0, ofGetHeight()/2, ofGetWidth()/2, ofGetHeight()/2);
 
-        default:
-            //カラー映像
-            colorImg.draw(0, 0, ofGetWidth(), ofGetHeight());
-            break;
-    }
+    //カラー映像
+    colorImg.draw(ofGetWidth()/2, ofGetHeight()/2,ofGetWidth()/2, ofGetHeight()/2);
 
     //画面に対する映像の比率を計算
     float ratioX = ofGetWidth()/CAM_WIDTH;
@@ -139,8 +128,8 @@ void OpenCVScene2::draw(){
         for (int i = 0; i < contourFinder.nBlobs; i++){
             ofPushMatrix();
             //画面サイズいっぱいに表示されるようリスケール
-            glScalef((float)ofGetWidth() / (float)grayDiff.width,
-                     (float)ofGetHeight() / (float)grayDiff.height,
+            glScalef((float)ofGetWidth()/2 / (float)grayDiff.width,
+                     (float)ofGetHeight()/2 / (float)grayDiff.height,
                      1.0f);
             contourFinder.blobs[i].draw(0,0);
             ofFill();

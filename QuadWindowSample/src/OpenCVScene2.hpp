@@ -10,8 +10,9 @@
 #define OpenCVScene2_hpp
 
 
-#define CAM_WIDTH 640
-#define CROP_HEIGHT 480
+#define CAM_WIDTH 800
+#define CROP_HEIGHT 600
+
 
 #include <opencv2/opencv.hpp>
 #include "ofMain.h"

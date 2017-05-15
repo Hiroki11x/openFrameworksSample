@@ -19,18 +19,18 @@ void OpenCVTestScene::setup(){
     //    img[2].load("img_2.jpeg");
     //    img[3].load("img_3.jpeg");
 
-    for(int i = 1 ;i<1 ;i++){
-        screenFbo[i].clear();
-        screenFbo[i].allocate(CAM_WIDTH,CROP_HEIGHT);
-    }
+//    for(int i = 1 ;i<1 ;i++){
+//        screenFbo[i].clear();
+//        screenFbo[i].allocate(CAM_WIDTH,CROP_HEIGHT);
+//    }
 
     //岩瀬 192.168.145.238
 //    cap[0] = cv::VideoCapture("http://192.168.145.238:7890/ipvideo.mjpg");
 //    img[0].allocate(CAM_WIDTH, CROP_HEIGHT, OF_IMAGE_COLOR);
 
     //長田 192.168.157.5
-//    cap[1] = cv::VideoCapture("http://192.168.157.5:7890/ipvideo.mjpg");
-//    img[1].allocate(CAM_WIDTH, CROP_HEIGHT, OF_IMAGE_COLOR);
+    cap[3] = cv::VideoCapture("http://192.168.157.5:7890/ipvideo.mjpg");
+//    img[3].allocate(CAM_WIDTH, CROP_HEIGHT, OF_IMAGE_COLOR);
 
     //奥村 192.168.145.27 (KeiのPCの設定的に、きつい)
 //    cap[2] = cv::VideoCapture("http://192.168.145.27:7890/ipvideo.mjpg");
@@ -38,8 +38,8 @@ void OpenCVTestScene::setup(){
 
 
     //短パン Raspberry Pi 192.168.146.23:8080
-    cap[3] = cv::VideoCapture("http://192.168.146.23:8080/?action=stream");
-    img[3].allocate(CAM_WIDTH, CROP_HEIGHT, OF_IMAGE_COLOR);
+//    cap[3] = cv::VideoCapture("http://192.168.146.23:8080/?action=stream");
+//    img[3].allocate(CAM_WIDTH, CROP_HEIGHT, OF_IMAGE_COLOR);
 
 
     //---------OpenCV Sample として追加 ---------
@@ -48,7 +48,16 @@ void OpenCVTestScene::setup(){
     grayImage.allocate(CAM_WIDTH,CROP_HEIGHT);
     grayBg.allocate(CAM_WIDTH,CROP_HEIGHT);
     grayDiff.allocate(CAM_WIDTH,CROP_HEIGHT);
-    tmp.allocate(CAM_WIDTH,CROP_HEIGHT);
+//    tmp.allocate(CAM_WIDTH,CROP_HEIGHT);
+    colorImgHSV.allocate(CAM_WIDTH,CROP_HEIGHT);
+
+    //二値画像を作るための配列の大きさを指定
+    colorTrackedPixelsRed = new unsigned char[CAM_WIDTH,CROP_HEIGHT];
+
+
+    hueImg.allocate(CAM_WIDTH,CROP_HEIGHT);
+    satImg.allocate(CAM_WIDTH,CROP_HEIGHT);
+    briImg.allocate(CAM_WIDTH,CROP_HEIGHT);
 
     //変数の初期化
     bLearnBakground = true;
@@ -62,16 +71,18 @@ void OpenCVTestScene::setup(){
 //--------------------------------------------------------------
 void OpenCVTestScene::update(){
 
+    if(ofGetFrameNum()%10 == 0)bLearnBakground = true;
 
-    for(int i = 3; i<4;i++){
-        if (cap[i].isOpened() ){
-            cap[i] >> frame[i];
-            if(frame[i].empty()){
+
+//    for(int i = 3; i<4;i++){
+        if (cap[3].isOpened() ){
+            cap[3] >> frame[3];
+            if(frame[3].empty()){
                 cout << "empty" << endl;
-                exit();
+//                exit();
             }else{
-                img[i].setFromPixels(frame[i].ptr(), frame[i].cols, frame[i].rows, OF_IMAGE_COLOR,FALSE);
-                colorImg.setFromPixels(frame[i].ptr(),frame[i].cols, frame[i].rows);
+//                img[3].setFromPixels(frame[3].ptr(), frame[3].cols, frame[3].rows, OF_IMAGE_COLOR,FALSE);
+                colorImg.setFromPixels(frame[3].ptr(), frame[3].cols, frame[3].rows);
                 //---------OpenCV Sample として追加 ---------
 
                 //カラーのイメージをグレースケールに変換
@@ -92,25 +103,51 @@ void OpenCVTestScene::update(){
                 
                 //-----------------------------------------------------
 
-                
-                for(auto &p : grayDiff.getPixels()){
-                    if(p>100){
-        
+
+                //HSV系に変換
+                colorImgHSV = colorImg;
+                colorImgHSV.convertRgbToHsv();
+
+                //色相、彩度、明度にマッピング
+                colorImgHSV.convertToGrayscalePlanarImages(hueImg, satImg, briImg);
+
+                //ここが何やってんのか分からん。
+                hueImg.flagImageChanged();
+                satImg.flagImageChanged();
+                briImg.flagImageChanged();
+
+                //ピクセルの配列をそれぞれに作成
+//                unsigned char *huePixels = hueImg.getPixels();
+//                unsigned char *satPixels = satImg.getPixels();
+                unsigned char *briPixels = briImg.getPixels();
+
+                //ピクセルの色が指定した色と色相と彩度が近ければ、
+                //colorTrackedPixelsRedに255を、遠ければ0を代入。
+                for (int j=0; j<CAM_WIDTH*CROP_HEIGHT; j++) {
+                    if ( (briPixels[j]>=180)){
+                        colorTrackedPixelsRed[j] = 255;
+                    }else {
+                        colorTrackedPixelsRed[j]=0;
                     }
+                    
                 }
+//                colorImg.setFromPixels(colorTrackedPixelsRed,CAM_WIDTH,CROP_HEIGHT);
+                trackedTextureRed.loadData(colorTrackedPixelsRed, CAM_WIDTH,CROP_HEIGHT, GL_LUMINANCE);
+//                delete huePixels;
+//                delete satPixels;
+//                delete briPixels;
             }
-            if(cv::waitKey(30) >= 0) exit();
+//            if(cv::waitKey(30) >= 0) exit();
         }
-    }
 
 
 
-    for(int i = 3 ;i<4 ;i++){
-        screenFbo[i].begin();
-        ofClear(0);
-        if(img[i].isAllocated())img[i].draw(0,0);
-        screenFbo[i].end();
-    }
+//    for(int i = 3 ;i<4 ;i++){
+//        screenFbo[i].begin();
+//        ofClear(0);
+//        if(img[i].isAllocated())img[i].draw(0,0);
+//        screenFbo[i].end();
+//    }
 }
 
 //--------------------------------------------------------------
@@ -120,28 +157,21 @@ void OpenCVTestScene::draw(){
 
     //---------OpenCV Sample として追加 ---------
     //現在のモードに応じて、表示する映像を切り替え
-    switch (videoMode) {
 
-        case 1:
-            //グレースケール映像
-            grayImage.draw(0, 0, ofGetWidth(), ofGetHeight());
-            break;
 
-        case 2:
-            //背景画像
-            grayBg.draw(0, 0, ofGetWidth(), ofGetHeight());
-            break;
+    //グレースケール映像
+    grayImage.draw(0, 0, ofGetWidth()/2, ofGetHeight()/2);
 
-        case 3:
-            //2値化された差分映像
-            grayDiff.draw(0, 0, ofGetWidth(), ofGetHeight());
-            break;
 
-        default:
-            //カラー映像
-            colorImg.draw(0, 0, ofGetWidth(), ofGetHeight());
-            break;
-    }
+    //背景画像
+    grayBg.draw(ofGetWidth()/2, 0, ofGetWidth()/2, ofGetHeight()/2);
+
+    //2値化された差分映像
+    grayDiff.draw(0, ofGetHeight()/2, ofGetWidth()/2, ofGetHeight()/2);
+
+    //カラー映像
+    trackedTextureRed.draw(ofGetWidth()/2, ofGetHeight()/2,ofGetWidth()/2, ofGetHeight()/2);
+
 
     //画面に対する映像の比率を計算
     float ratioX = ofGetWidth()/CAM_WIDTH;
@@ -153,8 +183,8 @@ void OpenCVTestScene::draw(){
         for (int i = 0; i < contourFinder.nBlobs; i++){
             ofPushMatrix();
             //画面サイズいっぱいに表示されるようリスケール
-            glScalef((float)ofGetWidth() / (float)grayDiff.width,
-                     (float)ofGetHeight() / (float)grayDiff.height,
+            glScalef((float)ofGetWidth()/2 / (float)grayDiff.width,
+                     (float)ofGetHeight()/2 / (float)grayDiff.height,
                      1.0f);
             contourFinder.blobs[i].draw(0,0);
             ofFill();
@@ -281,4 +311,10 @@ void OpenCVTestScene::gotMessage(ofMessage msg){
 //--------------------------------------------------------------
 void OpenCVTestScene::dragEvent(ofDragInfo dragInfo){ 
     
+}
+
+
+//--------------------------------------------------------------
+void OpenCVTestScene::exit(){
+//    delete colorTrackedPixelsRed;
 }
