@@ -24,6 +24,11 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
 
+    void exit();
+
+    void drawDebugMasks();
+    void drawCheckerboard(float x, float y, int width, int height, int size);
+
     ofImage bg_image;
 
     ofxChromaKeyShader *chromakey;
