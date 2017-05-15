@@ -4,6 +4,7 @@
 
 #include "ofxChromaKeyShader.h"
 #include "ofxGui.h"
+#include "DrawerUtil.hpp"
 
 class ofApp : public ofBaseApp{
 
@@ -11,6 +12,7 @@ class ofApp : public ofBaseApp{
 		void setup();
 		void update();
 		void draw();
+        void exit();
 
 		void keyPressed(int key);
 		void keyReleased(int key);
@@ -24,19 +26,14 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
 
-    void exit();
 
-    void drawDebugMasks();
-    void drawCheckerboard(float x, float y, int width, int height, int size);
 
     ofImage bg_image;
 
     ofxChromaKeyShader *chromakey;
     ofVideoGrabber webcam;
     int camW, camH;
-
-    ofFbo checkerboardTex;
-
+    
     ofxPanel chromaGui;
     bool bShowGui;
     bool bUpdateBgColor;
