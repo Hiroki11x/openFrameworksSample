@@ -22,7 +22,22 @@ class ofApp : public ofBaseApp{
 		void gotMessage(ofMessage msg);
 
     void draw_matrix();
+    void update_scene();
     void draw_scene();
+
+    void update_scene_A();
+    void update_scene_B();
+    void update_scene_C();
+    void update_scene_D();
+    void update_scene_E();
+
+    void draw_scene_A();
+    void draw_scene_B();
+    void draw_scene_C();
+    void draw_scene_D();
+    void draw_scene_E();
+
+    int scene_frag; //
 
     float m_box_z;//box及びカメラ移動のために使う、z座標
     float z_offset;//マトリックスを無限に表示させるために
