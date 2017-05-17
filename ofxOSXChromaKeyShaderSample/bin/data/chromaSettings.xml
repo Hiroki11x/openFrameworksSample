@@ -19,16 +19,16 @@
 		<photoZoom>1</photoZoom>
 	</greenscreenSettings>
 <DO_NOT_CHANGE_-_HERE>
-		<bgColorPos>66.5306, 42.2449</bgColorPos>
+		<bgColorPos>419.592, 232.041</bgColorPos>
 		<bgColorROIsize>20</bgColorROIsize>
-		<bgColor>0.132657, 0.0955196, 0.0594412, 1</bgColor>
-		<baseMaskClip_b_w_>0.748087, 0.0975766</baseMaskClip_b_w_>
+		<bgColor>0.267971, 0.18848, 0.15351, 1</bgColor>
+		<baseMaskClip_b_w_>0.279337, 0.0975766</baseMaskClip_b_w_>
 		<detailMaskClip_b_w_>0.565, 0.82</detailMaskClip_b_w_>
 		<endMaskClip_b_w_>0.1, 1</endMaskClip_b_w_>
 		<baseMaskStrength>0.8</baseMaskStrength>
 		<chromaMaskStrength>0.4</chromaMaskStrength>
 		<greenspillStrength>0.4</greenspillStrength>
-		<multiplyFilterHueOffset>0.25</multiplyFilterHueOffset>
+		<multiplyFilterHueOffset>0.715625</multiplyFilterHueOffset>
 		<blurValue>512</blurValue>
 		<dilateStep>3</dilateStep>
 		<erodeStep>1</erodeStep>

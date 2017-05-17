@@ -2,7 +2,6 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-    bShowGui = true;
     bUpdateBgColor = true;
 
     camW = 640; camH = 480;
@@ -17,13 +16,8 @@ void ofApp::setup(){
     // maskee
     bg_image.load("bg.jpg");
 
-    // GUI
-    chromaGui.setDefaultHeight(18);
-    chromaGui.setDefaultWidth(camW/2);
-    chromaGui.setup(chromakey->generalParams, "chromaSettings.xml");
-    chromaGui.loadFromFile("chromaSettings.xml");
-    chromaGui.setPosition(0, 0);	
-
+    //GUI
+    mGuiManager.setup(chromakey,camW);
 }
 
 //--------------------------------------------------------------
@@ -48,33 +42,19 @@ void ofApp::draw(){
     DrawerUtil::drawDebugMasks(camW, camH, chromakey, webcam);
 
     // GUI
-    if(bShowGui) {
-        chromaGui.draw();
-
-        // draw bg color's reference Rect
-        if(bUpdateBgColor) {
-            ofPushStyle();
-            ofNoFill();
-            ofSetLineWidth(3);
-            ofSetColor(255);
-            ofVec2f bgColorPos = chromakey->bgColorPos.get();
-            ofDrawRectangle(bgColorPos.x + camW/2, bgColorPos.y, chromakey->bgColorSize.get(), chromakey->bgColorSize.get());
-            ofDrawBitmapString("bgColor", bgColorPos.x + camW/2, bgColorPos.y - 5);
-            ofPopStyle();
-        }
-    }
+    mGuiManager.draw(chromakey,camW,bUpdateBgColor);
 }
 
 
 //--------------------------------------------------------------
 void ofApp::exit() {
-    chromaGui.saveToFile("chromaSettings.xml");
+    mGuiManager.exit();
     delete chromakey;
 }
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
-
+    mGuiManager.keyPressed(key);
 }
 
 //--------------------------------------------------------------

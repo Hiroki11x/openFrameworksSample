@@ -3,7 +3,7 @@
 #include "ofMain.h"
 
 #include "ofxChromaKeyShader.h"
-#include "ofxGui.h"
+#include "GuiManager.hpp"
 #include "DrawerUtil.hpp"
 
 class ofApp : public ofBaseApp{
@@ -32,9 +32,10 @@ class ofApp : public ofBaseApp{
 
     ofxChromaKeyShader *chromakey;
     ofVideoGrabber webcam;
+    GuiManager mGuiManager;
+
     int camW, camH;
     
-    ofxPanel chromaGui;
-    bool bShowGui;
+//    bool bShowGui;
     bool bUpdateBgColor;
 };
