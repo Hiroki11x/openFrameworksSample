@@ -19,21 +19,21 @@
 		<photoZoom>1</photoZoom>
 	</greenscreenSettings>
 <DO_NOT_CHANGE_-_HERE>
-		<bgColorPos>6.12245, 13.1195</bgColorPos>
-		<bgColorROIsize>59.4543</bgColorROIsize>
-		<bgColor>0.861078, 0.861033, 0.822256, 1</bgColor>
-		<baseMaskClip_b_w_>1, 1</baseMaskClip_b_w_>
-		<detailMaskClip_b_w_>0.0641399, 0.154519</detailMaskClip_b_w_>
-		<endMaskClip_b_w_>0, 0.221574</endMaskClip_b_w_>
-		<baseMaskStrength>0.128571</baseMaskStrength>
-		<chromaMaskStrength>0.145714</chromaMaskStrength>
-		<greenspillStrength>0.151429</greenspillStrength>
-		<multiplyFilterHueOffset>0.662857</multiplyFilterHueOffset>
+		<bgColorPos>97.9592, 69.9708</bgColorPos>
+		<bgColorROIsize>156.403</bgColorROIsize>
+		<bgColor>1, 1, 1, 1</bgColor>
+		<baseMaskClip_b_w_>0.431487, 0.6793</baseMaskClip_b_w_>
+		<detailMaskClip_b_w_>0, 0.0145773</detailMaskClip_b_w_>
+		<endMaskClip_b_w_>0.0728863, 0.090379</endMaskClip_b_w_>
+		<baseMaskStrength>0.0285714</baseMaskStrength>
+		<chromaMaskStrength>0.454286</chromaMaskStrength>
+		<greenspillStrength>0</greenspillStrength>
+		<multiplyFilterHueOffset>0.294286</multiplyFilterHueOffset>
 		<blurValue>1884.16</blurValue>
-		<dilateStep>2</dilateStep>
-		<erodeStep>2</erodeStep>
+		<dilateStep>1</dilateStep>
+		<erodeStep>1</erodeStep>
 	<IMAGE_POSITION>
-			<photoOffset>0.291565, 0.208252</photoOffset>
+			<photoOffset>16.9513, 0.208252</photoOffset>
 			<photoZoom>1.00962</photoZoom>
 			<photoRotation>0</photoRotation>
 			<clippingMask_TopRight_>700, 0</clippingMask_TopRight_>
