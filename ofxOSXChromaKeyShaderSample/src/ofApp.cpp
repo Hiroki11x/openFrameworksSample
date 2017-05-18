@@ -5,7 +5,7 @@ void ofApp::setup(){
     ofSetWindowShape(CAM_W*2, CAM_H*1.5f);
 
 
-    test_imege.load("d.jpg");
+    test_imege.load("e.jpg");
    
     mChromakeyManager.setup(CAM_W,CAM_H);
     mDebugModeDrawer.setup(mChromakeyManager.getChromaKey(),CAM_W,CAM_H);
@@ -23,7 +23,7 @@ void ofApp::update(){
 void ofApp::draw(){
     ofSetColor(255);
     ofBackground(0);
-    mChromakeyManager.draw();
+//    mChromakeyManager.draw();
     mDebugModeDrawer.draw(mChromakeyManager.getChromaKey(), test_imege);
 }
 

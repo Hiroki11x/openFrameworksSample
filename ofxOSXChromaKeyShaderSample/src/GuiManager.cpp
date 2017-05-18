@@ -14,6 +14,17 @@ void GuiManager::setup(ofxChromaKeyShader *chromakey,int camW){
     // GUI
     chromaGui.setDefaultHeight(18);
     chromaGui.setDefaultWidth(camW/2);
+    chromaGui.setFillColor(ofColor::black);
+    chromaGui.setTextColor(ofColor::white);
+    chromaGui.setBackgroundColor(ofColor::black);
+    chromaGui.setHeaderBackgroundColor(ofColor::fromHex(0x000066));
+    chromaGui.setBorderColor(ofColor::fromHex(0x000044));
+    chromaGui.setDefaultBackgroundColor(ofColor::black);
+    chromaGui.setDefaultFillColor(ofColor::fromHex(0x000066));
+    chromaGui.setDefaultTextColor(ofColor::white);
+    chromaGui.setDefaultHeaderBackgroundColor(ofColor::fromHex(0x000022));
+    chromaGui.setDefaultBorderColor(ofColor::fromHex(0x000044));
+    chromaGui.setDefaultWidth(300);
     chromaGui.setup(chromakey->generalParams, "chromaSettings.xml");
     chromaGui.add(chromakey->positionParams);
     chromaGui.loadFromFile("chromaSettings.xml");
