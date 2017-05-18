@@ -16,7 +16,7 @@
 class GuiManager : public ofBaseApp{
 public:
     void setup(ofxChromaKeyShader *chromakey, int camW);
-    void draw(ofxChromaKeyShader *chromakey,int camW, bool bUpdateBgColor);
+    void draw(ofxChromaKeyShader *chromakey,int camW);
     void exit();
     void keyPressed(int key);
 

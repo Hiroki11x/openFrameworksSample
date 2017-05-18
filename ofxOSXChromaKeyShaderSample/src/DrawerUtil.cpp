@@ -33,25 +33,26 @@ void DrawerUtil::setupCheckerboard(int width, int height, int size){
 }
 
 //--------------------------------------------------------------
-void DrawerUtil::drawDebugMasks(int camW, int camH, ofxChromaKeyShader *chromakey,  ofVideoGrabber webcam) {
+void DrawerUtil::drawDebugMasks(int camW, int camH, ofxChromaKeyShader *chromakey,  ofImage img) {
     ofSetColor(255);
     int previewW = camW/2, previewH = camH/2, labelOffset = 10;
 
     chromakey->drawBaseMask(camW + previewW, 0, previewW, previewH);
-    ofDrawBitmapStringHighlight("Base mask", camW + previewW, labelOffset, ofColor(0, 125), ofColor::yellowGreen);
+    ofDrawBitmapStringHighlight("Base mask", camW + previewW, labelOffset, ofColor(0, 125), ofColor::green);
 
     chromakey->drawDetailMask(camW + previewW, previewH, previewW, previewH);
-    ofDrawBitmapStringHighlight("Detailed mask", camW + previewW, previewH + labelOffset, ofColor(0, 125), ofColor::yellowGreen);
+    ofDrawBitmapStringHighlight("Detailed mask", camW + previewW, previewH + labelOffset, ofColor(0, 125), ofColor::green);
 
     chromakey->drawChromaMask(previewW, camH, previewW, previewH);
-    ofDrawBitmapStringHighlight("Chroma mask", previewW, camH + labelOffset, ofColor(0, 125), ofColor::yellowGreen);
+    ofDrawBitmapStringHighlight("Chroma mask", previewW, camH + labelOffset, ofColor(0, 125), ofColor::green
+                                );
 
     drawCheckerboard(camW, camH, previewW, previewH, 5);
     chromakey->drawFinalMask(camW, camH, previewW, previewH);
-    ofDrawBitmapStringHighlight("Final mask", camW, camH + labelOffset, ofColor(0, 125), ofColor::yellowGreen);
+    ofDrawBitmapStringHighlight("Final mask", camW, camH + labelOffset, ofColor(0, 125), ofColor::green);
 
-    webcam.draw(camW + previewW, camH, previewW, previewH);
-    ofDrawBitmapStringHighlight("RGB image", camW + previewW, camH + labelOffset, ofColor(0, 125), ofColor::yellowGreen);
+    img.draw(camW + previewW, camH, previewW, previewH);
+    ofDrawBitmapStringHighlight("RGB image", camW + previewW, camH + labelOffset, ofColor(0, 125), ofColor::green);
 }
 
 //--------------------------------------------------------------

@@ -16,7 +16,7 @@
 class DrawerUtil{
 public:
     static void setupCheckerboard(int width, int height, int size);
-    static void drawDebugMasks(int camW, int camH, ofxChromaKeyShader *chromakey, ofVideoGrabber webcam);
+    static void drawDebugMasks(int camW, int camH, ofxChromaKeyShader *chromakey, ofImage img);
     static void drawCheckerboard(float x, float y, int width, int height, int size);
     static ofFbo checkerboardTex;
 };

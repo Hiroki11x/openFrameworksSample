@@ -18,6 +18,8 @@
 		45CC483A999BF1065A6B926C /* Distance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9DBD717072C35D324E101669 /* Distance.cpp */; };
 		483908258D00B98B4BE69F07 /* ofxLabel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78D67A00EB899FAC09430597 /* ofxLabel.cpp */; };
 		4EAB749F1ECBCA5800C31570 /* GuiManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4EAB749D1ECBCA5800C31570 /* GuiManager.cpp */; };
+		4EAB74A41ECC7D6700C31570 /* DebugModeDrawer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4EAB74A21ECC7D6700C31570 /* DebugModeDrawer.cpp */; };
+		4EAB74A71ECC7E0800C31570 /* ChromakeyManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4EAB74A51ECC7E0800C31570 /* ChromakeyManager.cpp */; };
 		4EFD609D1EC9E62F00360B82 /* DrawerUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4EFD609B1EC9E62F00360B82 /* DrawerUtil.cpp */; };
 		5CBB2AB3A60F65431D7B555D /* ofxButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C88333E71C9457E441C33474 /* ofxButton.cpp */; };
 		5CC34D433F5806179935B89D /* Flow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03A75A648BC4CF1D9DEDD0CE /* Flow.cpp */; };
@@ -132,6 +134,10 @@
 		4DCC135EE16D131FA0A70DD8 /* ofxChromaKeyShader.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxChromaKeyShader.h; path = ../../../addons/ofxChromaKeyShader/src/ofxChromaKeyShader.h; sourceTree = SOURCE_ROOT; };
 		4EAB749D1ECBCA5800C31570 /* GuiManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GuiManager.cpp; sourceTree = "<group>"; };
 		4EAB749E1ECBCA5800C31570 /* GuiManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GuiManager.hpp; sourceTree = "<group>"; };
+		4EAB74A21ECC7D6700C31570 /* DebugModeDrawer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DebugModeDrawer.cpp; sourceTree = "<group>"; };
+		4EAB74A31ECC7D6700C31570 /* DebugModeDrawer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DebugModeDrawer.hpp; sourceTree = "<group>"; };
+		4EAB74A51ECC7E0800C31570 /* ChromakeyManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ChromakeyManager.cpp; sourceTree = "<group>"; };
+		4EAB74A61ECC7E0800C31570 /* ChromakeyManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ChromakeyManager.hpp; sourceTree = "<group>"; };
 		4EFD609B1EC9E62F00360B82 /* DrawerUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DrawerUtil.cpp; sourceTree = "<group>"; };
 		4EFD609C1EC9E62F00360B82 /* DrawerUtil.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DrawerUtil.hpp; sourceTree = "<group>"; };
 		5105862F1606831E9239FEAF /* simd_functions.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = simd_functions.hpp; path = ../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/simd_functions.hpp; sourceTree = SOURCE_ROOT; };
@@ -532,6 +538,15 @@
 			name = gui;
 			sourceTree = "<group>";
 		};
+		4EAB74A11ECC7D5400C31570 /* drawer */ = {
+			isa = PBXGroup;
+			children = (
+				4EAB74A21ECC7D6700C31570 /* DebugModeDrawer.cpp */,
+				4EAB74A31ECC7D6700C31570 /* DebugModeDrawer.hpp */,
+			);
+			name = drawer;
+			sourceTree = "<group>";
+		};
 		4EB038C7DF921AA8A4070286 /* ofxCv */ = {
 			isa = PBXGroup;
 			children = (
@@ -555,6 +570,8 @@
 			children = (
 				4EFD609B1EC9E62F00360B82 /* DrawerUtil.cpp */,
 				4EFD609C1EC9E62F00360B82 /* DrawerUtil.hpp */,
+				4EAB74A51ECC7E0800C31570 /* ChromakeyManager.cpp */,
+				4EAB74A61ECC7E0800C31570 /* ChromakeyManager.hpp */,
 			);
 			name = util;
 			sourceTree = "<group>";
@@ -922,6 +939,7 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				4EAB74A11ECC7D5400C31570 /* drawer */,
 				4EAB749C1ECBCA4600C31570 /* gui */,
 				4EFD609A1EC9E61900360B82 /* util */,
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
@@ -1073,6 +1091,7 @@
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
 				4EFD609D1EC9E62F00360B82 /* DrawerUtil.cpp in Sources */,
+				4EAB74A71ECC7E0800C31570 /* ChromakeyManager.cpp in Sources */,
 				356D5942DD18260659DC2371 /* ofxChromaKeyShader.cpp in Sources */,
 				B6840996567E78436F7ECFAB /* ETF.cpp in Sources */,
 				F76B4A79BD8DE4854141CB47 /* fdog.cpp in Sources */,
@@ -1093,6 +1112,7 @@
 				B266578FC55D23BFEBC042E7 /* ofxGuiGroup.cpp in Sources */,
 				483908258D00B98B4BE69F07 /* ofxLabel.cpp in Sources */,
 				F285EB3169F1566CA3D93C20 /* ofxPanel.cpp in Sources */,
+				4EAB74A41ECC7D6700C31570 /* DebugModeDrawer.cpp in Sources */,
 				837220E80EB56CD44AD27F2A /* ofxSlider.cpp in Sources */,
 				B56FE57CC35806596D38118C /* ofxSliderGroup.cpp in Sources */,
 				1CD33E884D9E3358252E82A1 /* ofxToggle.cpp in Sources */,

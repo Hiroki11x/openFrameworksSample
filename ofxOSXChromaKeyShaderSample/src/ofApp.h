@@ -1,10 +1,12 @@
 #pragma once
 
-#include "ofMain.h"
+#define CAM_W 700
+#define CAM_H 500
 
-#include "ofxChromaKeyShader.h"
-#include "GuiManager.hpp"
+#include "ofMain.h"
+#include "DebugModeDrawer.hpp"
 #include "DrawerUtil.hpp"
+#include "ChromakeyManager.hpp"
 
 class ofApp : public ofBaseApp{
 
@@ -27,15 +29,7 @@ class ofApp : public ofBaseApp{
 		void gotMessage(ofMessage msg);
 
 
-
-    ofImage bg_image;
-
-    ofxChromaKeyShader *chromakey;
-    ofVideoGrabber webcam;
-    GuiManager mGuiManager;
-
-    int camW, camH;
-    
-//    bool bShowGui;
-    bool bUpdateBgColor;
+    ofImage test_imege;
+    DebugModeDrawer mDebugModeDrawer;
+    ChromakeyManager mChromakeyManager;
 };

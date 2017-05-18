@@ -2,33 +2,20 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-    bUpdateBgColor = true;
+    ofSetWindowShape(CAM_W*2, CAM_H*1.5f);
 
-    camW = 640; camH = 480;
-    ofSetWindowShape(camW*2, camH*1.5f);
 
-    chromakey = new ofxChromaKeyShader(camW, camH);
-
-    // webcam setup
-    webcam.setDesiredFrameRate(60);
-    webcam.initGrabber(camW, camH);
-
-    // maskee
-    bg_image.load("bg.jpg");
-
-    //GUI
-    mGuiManager.setup(chromakey,camW);
+    test_imege.load("C69LZaYU4AAW1bO.jpg");
+   
+    mChromakeyManager.setup(CAM_W,CAM_H);
+    mDebugModeDrawer.setup(mChromakeyManager.getChromaKey(),CAM_W,CAM_H);
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
     ofSetWindowTitle(ofToString(ofGetFrameRate()));
-
-    webcam.update();
-    if(webcam.isFrameNew()) {
-        if(bUpdateBgColor)
-            chromakey->updateBgColor(webcam.getPixels());
-        chromakey->updateChromakeyMask(webcam.getTexture(), bg_image.getTexture());
+    if(test_imege.isAllocated()){
+        mChromakeyManager.update(&test_imege);
     }
 }
 
@@ -36,25 +23,20 @@ void ofApp::update(){
 void ofApp::draw(){
     ofSetColor(255);
     ofBackground(0);
-
-    // draw Cam mask
-    chromakey->drawFinalImage(camW/2, 0, camW, camH);
-    DrawerUtil::drawDebugMasks(camW, camH, chromakey, webcam);
-
-    // GUI
-    mGuiManager.draw(chromakey,camW,bUpdateBgColor);
+    mChromakeyManager.draw();
+    mDebugModeDrawer.draw(mChromakeyManager.getChromaKey(), test_imege);
 }
 
 
 //--------------------------------------------------------------
 void ofApp::exit() {
-    mGuiManager.exit();
-    delete chromakey;
+    mChromakeyManager.exit();
+    mDebugModeDrawer.exit();
 }
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
-    mGuiManager.keyPressed(key);
+    mDebugModeDrawer.keyPressed(key);
 }
 
 //--------------------------------------------------------------
