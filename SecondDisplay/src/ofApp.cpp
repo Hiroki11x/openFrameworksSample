@@ -2,7 +2,9 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-
+    ofSetWindowPosition(ofGetScreenWidth(), 0);
+    ofSetLineWidth(2);
+    ofSetCircleResolution(64);
 }
 
 //--------------------------------------------------------------
@@ -12,7 +14,9 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-
+    ofBackground(0);
+    ofDrawCircle(ofGetWidth()/2, ofGetHeight()/2, ofSignedNoise(ofGetElapsedTimef())*1000);
+    ofDrawLine(0, 0, ofGetWidth(), ofGetHeight());
 }
 
 //--------------------------------------------------------------
