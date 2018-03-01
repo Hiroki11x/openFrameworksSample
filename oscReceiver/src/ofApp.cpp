@@ -3,16 +3,21 @@
 //--------------------------------------------------------------
 void ofApp::setup(){
     OSCManager::setup();
+    FontManager::init();
+    HeartRate::init();
+    ElectroCardiogramView::init();
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
     OSCManager::update();
+    ElectroCardiogramView::update();
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
     OSCManager::draw();
+    ElectroCardiogramView::draw();
 }
 
 //--------------------------------------------------------------

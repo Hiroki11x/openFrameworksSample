@@ -2,6 +2,8 @@
 
 #include "ofMain.h"
 #include "OSCManager.hpp"
+#include "FontManager.hpp"
+#include "ElectroCardiogramView.hpp"
 
 class ofApp : public ofBaseApp{
 
